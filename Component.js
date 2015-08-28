@@ -107,12 +107,9 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 	 	    alert("Pane has been closed: " + oEvent.getParameter("id"));
 	 	}
 	});
-<<<<<<< HEAD
-=======
 	//set initial home screen
 	oShell.setContent(new sap.ui.core.mvc.XMLView({id:"homepage", viewName:"pge.ffe.pages.home.Home"}), true);
->>>>>>> branch 'master' of https://github.com/JamesTCS/ffe
-	
+
 	return oShell;
   }
    

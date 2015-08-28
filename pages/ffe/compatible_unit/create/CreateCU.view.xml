@@ -1,0 +1,65 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:table="sap.ui.table"
+	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
+	controllerName="pge.ffe.pages.ffe.compatible_unit.create.CreateCU">
+	<Panel>
+		<form:Form>
+			<form:formContainers>
+				<form:FormContainer>
+					<form:formElements>
+						<form:FormElement label="">
+							<form:fields>
+								<commons:Button text="Display Material" press="toDisplayMaterial" ></commons:Button>
+								<commons:Button text="Classification" ></commons:Button>
+								<commons:Label></commons:Label>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="CU ID">
+							<form:fields>
+								<commons:TextField>
+								</commons:TextField>
+								<commons:Button text="Structure List" span="L3 M3 S3" press="toStructureList" ></commons:Button>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="CU Description">
+							<form:fields>
+								<commons:TextField></commons:TextField>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="CU Category">
+							<form:fields>
+								<commons:TextField></commons:TextField>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Status">
+							<form:fields>
+								<commons:TextField></commons:TextField>
+								<commons:TextField></commons:TextField>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Valid from ">
+							<form:fields>
+								<commons:DatePicker></commons:DatePicker>
+								<commons:DatePicker></commons:DatePicker>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="">
+							<form:fields>
+								<commons:Button text="Task List"></commons:Button>
+								<commons:Button text="Tech Obs" ></commons:Button>
+								<commons:Label></commons:Label>
+							</form:fields>
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:title>
+				<core:Title text="Create CU"></core:Title>
+			</form:title>
+			<form:layout>
+				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
+			</form:layout>
+		</form:Form>
+	</Panel>
+	
+</core:View>

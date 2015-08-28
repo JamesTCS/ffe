@@ -1,0 +1,27 @@
+.sapUiUx3ShellCanvas{
+	background-image:url("PGEbanner1.jpg")!important;
+	background-size:100%;
+	
+	background-repeat: no-repeat;
+	 
+}
+
+.mid{
+	margin-top:40%;
+}
+.head{
+	font-size:2rem!important;
+	font-style:bold!important;
+}
+.right{
+	
+    margin-top:40%;
+	
+}
+.center{
+	margin-left:10%;
+	margin-top:5%;
+}
+.right1{
+	margin-left:10%;
+}

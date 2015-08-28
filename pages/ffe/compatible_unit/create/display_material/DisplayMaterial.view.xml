@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns="sap.ui.commons"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    controllerName="pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial" >
+		<Toolbar></Toolbar>
+		<l:VerticalLayout>
+			<l:HorizontalLayout>
+				<Label text="Material Name: "></Label>
+				<TextField tooltip="Material Name"></TextField>
+				<Button text= "Search"></Button>
+				<Button text= "Edit"></Button>	
+			</l:HorizontalLayout>
+			<l:HorizontalLayout>
+				<Label text="Material Number "></Label>
+				<TextField tooltip="Material Number"></TextField>
+			</l:HorizontalLayout>
+
+		</l:VerticalLayout>
+		<Toolbar></Toolbar>
+		<t:Table>
+		</t:Table>
+
+		<Toolbar>
+			<rightItems>
+				<Button
+				text = "Save"></Button>
+			</rightItems>
+		</Toolbar>
+
+</core:View>

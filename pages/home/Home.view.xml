@@ -1,0 +1,48 @@
+<core:View 	xmlns="sap.m" 
+xmlns:core="sap.ui.core" 
+xmlns:l="sap.ui.layout"
+xmlns:c="sap.suite.ui.commons"
+xmlns:u="sap.ui.unified"
+xmlns:html="http://www.w3.org/1999/xhtml"
+controllerName="pge.ffe.pages.home.Home" >
+<l:Grid
+    hSpacing="2"
+    defaultSpan="L6 M6 S10">
+    <l:content>
+<Panel class="mid" >
+<Label text="Information" class="head"/>
+<Text text="This is a tool created to generate estimates in a fast and efficient manner compliant with SAP standards using Compatible Units. Please use the links at the top of the page for basic navigation, or you can search or click on the links on the right panel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+</Panel>
+
+<Panel class="right" >
+<l:VerticalLayout>
+<Label text="Links" class="head"/>
+<Link text="Contact Us"
+      press="handleLinkPress" />
+     
+      <Link text="PG&amp;E Intranet Website"
+      press="handleLinkPress" />
+      <Link text="Gas"
+      press="handleLinkPress" />
+      <Link text="Electric"
+      press="handleLinkPress" />
+      </l:VerticalLayout>
+      <l:VerticalLayout class="center">
+      <Link text="Plant Lookup"
+      press="handleLinkPress" />
+      <Link text="Audits"
+      press="handleLinkPress" />
+      <Link text="Reporting Tool"
+      press="handleLinkPress" />
+      <Link text="Plant Lookup"
+      press="handleLinkPress" />
+      <Link text="Distributors"
+      press="handleLinkPress" />
+</l:VerticalLayout>
+<!--  <Image src="css/streetlight.png" class="right1" width="35%"/>-->
+</Panel>
+
+   </l:content> 
+   </l:Grid>
+    
+</core:View>

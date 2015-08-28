@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns="sap.ui.commons"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList">
+	
+		<Toolbar></Toolbar>
+		<l:HorizontalLayout>
+			<Label text="Material: "></Label>
+			<TextField tooltip="Material"></TextField>
+		</l:HorizontalLayout>
+		<l:HorizontalLayout>
+			<Label text="Desc: "></Label>
+			<TextField tooltip="Desc"></TextField>
+		</l:HorizontalLayout>
+		<l:HorizontalLayout>
+			<Label text="Valid Form: "></Label>
+			<TextField tooltip="Valid Form"></TextField>
+		</l:HorizontalLayout>
+		<Toolbar></Toolbar>
+		<t:TreeTable>
+		</t:TreeTable>
+
+		<Toolbar>
+			<rightItems>
+				<Button
+				text = "Save"></Button>
+			</rightItems>
+		</Toolbar>
+
+</core:View>

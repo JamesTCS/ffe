@@ -1,0 +1,25 @@
+.top25 {
+	margin-top: 25px !important;
+}
+
+.top10 {
+	margin-top: 10px !important;
+}
+
+.left10 {
+	margin-left: 10px !important;
+}
+
+.right10 {
+	margin-right: 10px !important;
+}
+
+.left25 {
+	margin-left: 25px !important;
+}
+
+.spacing { 
+	width: 100px !important;
+	margin-top: 10px !important;
+}
+

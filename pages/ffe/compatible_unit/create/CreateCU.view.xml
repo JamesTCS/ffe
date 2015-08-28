@@ -7,6 +7,162 @@
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
+<<<<<<< HEAD
+						<form:FormElement>
+							<form:fields>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L9 M9 S9"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:Button text="Save">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Save &amp; Exit">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Exit">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="CU ID">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Description" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Status" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Valid From" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+								</commons:DatePicker>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Base Unit">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L4 M4 S4"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Task List">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Button text="Create">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Change">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Display">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="CU Classification">
+									<commons:layoutData>
+										<l:GridData span="L2 M3 S5"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Ref Obj">
+							<commons:TextField>
+								<commons:layoutData>
+									<l:GridData span="L2 M2 S2"></l:GridData>
+								</commons:layoutData>
+							</commons:TextField>
+							<commons:Button text="Equipment">
+								<commons:layoutData>
+									<l:GridData span="L3 M3 S3"></l:GridData>
+								</commons:layoutData>
+							</commons:Button>
+						</form:FormElement>
+						<form:FormElement label="">
+							<commons:Label text="Function Location">
+								<commons:layoutData>
+									<l:GridData span="L2 M2 S2"></l:GridData>
+								</commons:layoutData>
+							</commons:Label>
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:title>
+				<core:Title text="Create CU"></core:Title>
+			</form:title>
+			<form:layout>
+				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
+			</form:layout>
+		</form:Form>
+		<form:Form>
+			<form:formContainers>
+				<form:FormContainer>
+					<form:formElements>
+						<form:FormElement>
+							
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:title>
+				<core:Title text="Sub-Items"></core:Title>
+			</form:title>
+			<form:layout>
+				<form:ResponsiveGridLayout columnsL="1"/>
+			</form:layout>
+		</form:Form>
+		<table:Table>
+			<table:title>
+				<commons:TextView text="Sub-Item"></commons:TextView>
+			</table:title>
+		</table:Table>
+=======
 						<form:FormElement label="">
 							<form:fields>
 								<commons:Button text="Display Material" press="toDisplayMaterial" ></commons:Button>
@@ -60,6 +216,7 @@
 				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
 			</form:layout>
 		</form:Form>
+>>>>>>> branch 'master' of https://github.com/JamesTCS/ffe
 	</Panel>
 	
 </core:View>

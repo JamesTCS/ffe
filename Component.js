@@ -107,6 +107,8 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 	 	    alert("Pane has been closed: " + oEvent.getParameter("id"));
 	 	}
 	});
+	//set initial home screen
+	oShell.setContent(new sap.ui.core.mvc.XMLView({id:"homepage", viewName:"pge.ffe.pages.home.Home"}), true);
 	
 	return oShell;
   }

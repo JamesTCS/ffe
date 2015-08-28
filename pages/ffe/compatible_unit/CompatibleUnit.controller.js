@@ -5,7 +5,6 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CompatibleUnit", {
 	 * @memberOf pge.ffe.view.Home
 	 */
 		onInit: function() {
-			console.log("here");
 			jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/style.css","styleLink");
 			
 		},

@@ -109,7 +109,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 	});
 	//set initial home screen
 	oShell.setContent(new sap.ui.core.mvc.XMLView({id:"homepage", viewName:"pge.ffe.pages.home.Home"}), true);
-
+	
 	return oShell;
   }
    

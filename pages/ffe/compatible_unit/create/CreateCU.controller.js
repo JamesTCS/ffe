@@ -14,7 +14,20 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     },
     
     toDisplayMaterial: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"structureList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"displayMaterial", viewName:"pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial"}), true);
+    },
+    
+    back: function() {
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"compatibleUnit", viewName:"pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"}), true);
+    },
+    
+    save: function() {
+		console.log("save");    	
+    },
+    
+    saveAndExit: function() {
+    	console.log("Save and Exit");
     }
 
 /**

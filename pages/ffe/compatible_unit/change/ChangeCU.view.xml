@@ -1,0 +1,200 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons" 
+	xmlns:m= "sap.m"
+	xmlns:ui="sap.ca.ui"
+	xmlns:l="sap.ui.layout"
+	xmlns:t="sap.ui.table"
+	xmlns:f="sap.ui.layout.form"
+	controllerName="pge.ffe.pages.ffe.compatible_unit.change.ChangeCU" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<Toolbar>
+	       <rightItems>
+	      <!-- <Button id="subItems" text="Sub Items"></Button>-->
+			</rightItems>
+			<items>
+				<!--<Button id="navback" icon="sap-icon://nav-back" text="Back"></Button>-->
+			</items>
+	</Toolbar>
+
+		<l:Grid defaultSpan="L12 M12 S12" hSpacing="0.05" vSpacing="1"
+    				containerQuery="true">
+   		<l:content>
+    		<f:Form id="BDForm" minWidth="auto"
+				maxContainerCols="3" editable="true" >
+				<f:title>
+				<core:Title text="Basic Data" />
+				</f:title>
+				<f:layout>
+				<f:ResponsiveGridLayout labelSpanL="4"
+				labelSpanM="3" emptySpanL="2" emptySpanM="2" columnsL="2"
+				columnsM="1"/>
+				</f:layout>
+				<f:formContainers>
+				<f:FormContainer >
+				<f:formElements>
+			
+				<f:FormElement >
+				 <f:label>
+					<Label text="Base Unit" class="labelAlign"></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="bUId" width="150px"  type="Text" value=""
+						 />
+			    </f:fields>
+			    </f:FormElement>
+			     
+			    <f:FormElement >
+			    <f:label>
+					<Label text="Authorization Group" class="labelAlign"></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="aGId" width="150px"  type="Text" value=""
+						class="" />
+			    </f:fields>
+			    </f:FormElement>
+			    <f:FormElement >
+			    <f:label>
+					<Label text="Sort Field" class="labelAlign"></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="sFId" width="150px"  type="Text" value=""
+						class="" />
+				</f:fields>
+			    </f:FormElement>
+			   <f:FormElement>
+				<f:label>
+					<Label text="TL Group" class="labelAlign"></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="tLId" width="150px"  type="Text" value=""
+						class="" />
+					<Button id="newId" text="New" ></Button>
+					<Button id="editId" text="Edit" ></Button>
+					<Button id="viewId" text="View" ></Button>
+					<Button id="wUsedId" text="Where Used" ></Button>
+			   </f:fields>
+			   </f:FormElement>
+			   </f:formElements>
+			   </f:FormContainer>
+			   </f:formContainers>
+			   </f:Form>
+	
+    		<f:Form id="refObjForm" minWidth="auto" 
+				maxContainerCols="3" editable="true" title="Reference Objects" >
+				<f:title>
+				<core:Title title="Reference Objects" />
+				</f:title>
+				<f:layout>
+				<f:ResponsiveGridLayout labelSpanL="4"
+				labelSpanM="3" emptySpanL="2" emptySpanM="2" columnsL="2"
+				columnsM="1" />
+				</f:layout>
+				<f:formContainers >
+				<f:FormContainer >
+				<f:formElements>
+			    <f:FormElement >
+			    <f:label>
+					<Label text="Reference Object Type" class="labelAlign"></Label>
+					
+				</f:label>
+				<f:fields >
+					<TextField id="refObjTypeId" width="150px"  type="Text" value=""
+						class="inputAlign" />
+			    </f:fields>
+			    </f:FormElement>
+			    <f:FormElement>
+			    <f:label>
+					<Label text="Functional Location" class=""></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="fLId" width="150px"  type="Text" value=""
+						class="" />
+					<TextView text="Pole Installation Type"></TextView>
+				</f:fields>
+			    </f:FormElement>
+			   <f:FormElement>
+			   <f:label>
+					<Label text="Equipment" class=""></Label>
+				</f:label>
+				<f:fields>
+					<TextField id="eqId" width="150px"  type="Text" value=""
+						class="" />
+					<Button id="rObjNewId" text="New" ></Button>
+					<Button id="rObjEditId" text="Edit" ></Button>
+					<Button id="rObjViewId" text="View" ></Button>
+			   </f:fields>
+			   </f:FormElement>
+			   </f:formElements>
+			   </f:FormContainer>
+			   </f:formContainers>
+			   </f:Form>
+			</l:content>
+    	</l:Grid>
+		<!--Sub Items Table -->
+			<t:Table id="subItemsTable" 
+				growing="true" growingScrollToLoad="true" title="Sub Items">
+				
+				<t:columns id="subItemsTable_columns">
+					<t:Column id="subItemsTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top"  >
+						<t:label> <Label text="Item"></Label></t:label>
+						
+					</t:Column>
+					
+					<t:Column id="subItemsTable_columns_col2"  width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="P">
+						<t:label> <Label text="P"></Label></t:label>
+					</t:Column>
+					
+					<t:Column id="subItemsTable_columns_col3" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="CU Number">
+						<t:label> <Label text="CU Number"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col4" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="CU Description">
+						<t:label> <Label text="CU Description"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col5" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="NrC">
+						<t:label> <Label text="NrC"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col6" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="QU">
+						<t:label> <Label text="QU"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col7" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="UO">
+						<t:label> <Label text="UO"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col8" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="S">
+						<t:label> <Label text="S"></Label></t:label>
+					</t:Column>
+					<t:Column id="subItemsTable_columns_col9" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="F">
+						<t:label> <Label text="F"></Label></t:label>
+					</t:Column>
+				</t:columns>
+			
+					<t:rows id="subItemsListItem_cells"> 
+					
+					</t:rows>
+			
+			</t:Table>	
+		<Toolbar>
+		<rightItems>
+			<Button id="displayId" type="Emphasized" text="Display" ></Button>
+			<Button id="saveId" type="Accept" text="Save" ></Button>
+		</rightItems>
+	</Toolbar>
+	<!-- CSS 
+	.sapUiFormResGridLbl.sapUiRespGridBreak.sapUiRespGridSpanL3.sapUiRespGridSpanM3.sapUiRespGridSpanS12{
+	padding-top:0px !important;
+	padding-bottom:10px !important;
+}
+
+	-->
+	
+</core:View>

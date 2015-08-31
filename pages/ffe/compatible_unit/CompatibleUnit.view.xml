@@ -35,7 +35,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 		</l:VerticalLayout>
 		
 		<l:HorizontalLayout class="top25">
-			<Button text="Search" />  <Button text="Display" class="left10" /> <Button text="Change" class="left10" /> <Button text="Create" class="left10" press="onCreate"/>
+			<Button text="Search" />  <Button text="Display" class="left10" /> <Button text="Change" class="left10" press="toChange" /> <Button text="Create" class="left10" press="onCreate"/>
 		</l:HorizontalLayout>
 		<t:Table>
 			<t:columns>

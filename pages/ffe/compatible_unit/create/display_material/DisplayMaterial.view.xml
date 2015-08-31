@@ -2,6 +2,7 @@
 	xmlns:m="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns="sap.ui.commons"
     xmlns:html="http://www.w3.org/1999/xhtml"
     controllerName="pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial" >
+		<Button text="Back" />
 		<Toolbar></Toolbar>
 		<l:VerticalLayout>
 			<l:HorizontalLayout>

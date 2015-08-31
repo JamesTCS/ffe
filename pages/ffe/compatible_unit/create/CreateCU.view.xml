@@ -3,6 +3,11 @@
 	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.create.CreateCU">
 	<Panel>
+		<l:HorizontalLayout>
+			<commons:Button text="Back" press="back" />
+			<commons:Button text="Save" press="save" />
+			<commons:Button text="Save &amp; Exit" press="saveAndExit" />
+		</l:HorizontalLayout>
 		<form:Form>
 			<form:formContainers>
 				<form:FormContainer>

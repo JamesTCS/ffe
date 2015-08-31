@@ -1,8 +1,7 @@
 <core:View xmlns:core="sap.ui.core" 
 	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:table="sap.ui.table"
 	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.create.CreateCU">
-	<!--Test Comment-->
+	controllerName="pge.ffe.view.Master">
 	<Panel>
 		<l:HorizontalLayout>
 			<commons:Button text="Back" press="back" />
@@ -13,48 +12,127 @@
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
-						<form:FormElement label="">
+						<form:FormElement>
 							<form:fields>
-								<commons:Button text="Display Material" press="toDisplayMaterial" ></commons:Button>
-								<commons:Button text="Classification" ></commons:Button>
-								<commons:Label></commons:Label>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L9 M9 S9"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:Button text="Save">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Save &amp; Exit">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Exit">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
 							</form:fields>
 						</form:FormElement>
 						<form:FormElement label="CU ID">
 							<form:fields>
 								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
 								</commons:TextField>
-								<commons:Button text="Structure List" span="L3 M3 S3" press="toStructureList" ></commons:Button>
+								<commons:Label text="Description" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Status" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Valid From" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+								</commons:DatePicker>
 							</form:fields>
 						</form:FormElement>
-						<form:FormElement label="CU Description">
+						<form:FormElement label="Base Unit">
 							<form:fields>
-								<commons:TextField></commons:TextField>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L4 M4 S4"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
 							</form:fields>
 						</form:FormElement>
-						<form:FormElement label="CU Category">
+						<form:FormElement label="Task List">
 							<form:fields>
-								<commons:TextField></commons:TextField>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Button text="Create">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Change">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Display">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="CU Classification">
+									<commons:layoutData>
+										<l:GridData span="L2 M3 S5"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
 							</form:fields>
 						</form:FormElement>
-						<form:FormElement label="Status">
-							<form:fields>
-								<commons:TextField></commons:TextField>
-								<commons:TextField></commons:TextField>
-							</form:fields>
-						</form:FormElement>
-						<form:FormElement label="Valid from ">
-							<form:fields>
-								<commons:DatePicker></commons:DatePicker>
-								<commons:DatePicker></commons:DatePicker>
-							</form:fields>
+						<form:FormElement label="Ref Obj">
+							<commons:TextField>
+								<commons:layoutData>
+									<l:GridData span="L2 M2 S2"></l:GridData>
+								</commons:layoutData>
+							</commons:TextField>
+							<commons:Button text="Equipment">
+								<commons:layoutData>
+									<l:GridData span="L3 M3 S3"></l:GridData>
+								</commons:layoutData>
+							</commons:Button>
 						</form:FormElement>
 						<form:FormElement label="">
-							<form:fields>
-								<commons:Button text="Task List"></commons:Button>
-								<commons:Button text="Tech Obs" ></commons:Button>
-								<commons:Label></commons:Label>
-							</form:fields>
+							<commons:Label text="Function Location">
+								<commons:layoutData>
+									<l:GridData span="L2 M2 S2"></l:GridData>
+								</commons:layoutData>
+							</commons:Label>
 						</form:FormElement>
 					</form:formElements>
 				</form:FormContainer>
@@ -66,6 +144,27 @@
 				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
 			</form:layout>
 		</form:Form>
+		<table:Table>
+			<table:title>
+				<commons:TextView text="Sub-Items"></commons:TextView>
+			</table:title>
+			<table:columns>
+				<table:Column>
+					<commons:Label text="CU Number"></commons:Label>
+				</table:Column>
+				<table:Column>
+					<commons:Label text="Description"></commons:Label>
+				</table:Column>
+				<table:Column>
+					<commons:Label text="NR"></commons:Label>
+				</table:Column>
+				<table:Column>
+					<commons:Label text="Quantity"></commons:Label>
+				</table:Column>
+			</table:columns>
+		</table:Table>
+		<commons:Button text="Add Item"></commons:Button>
+		<commons:Button text="Delete Item"></commons:Button>
 	</Panel>
 	
 </core:View>

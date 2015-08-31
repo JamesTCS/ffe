@@ -8,7 +8,12 @@
 	xmlns:f="sap.ui.layout.form"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.change.ChangeCU" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	
+	<l:HorizontalLayout>
+		<Button text="Back" press="back" />
+		<Button text="Save" press="save" />
+		<Button text="Save &amp; Exit" press="saveAndExit" />
+		<html:h1>Change Compatible Unit</html:h1>
+	</l:HorizontalLayout>
 	<Toolbar>
 	       <rightItems>
 	      <!-- <Button id="subItems" text="Sub Items"></Button>-->
@@ -189,12 +194,6 @@
 			<Button id="saveId" type="Accept" text="Save" ></Button>
 		</rightItems>
 	</Toolbar>
-	<!-- CSS 
-	.sapUiFormResGridLbl.sapUiRespGridBreak.sapUiRespGridSpanL3.sapUiRespGridSpanM3.sapUiRespGridSpanS12{
-	padding-top:0px !important;
-	padding-bottom:10px !important;
-}
 
-	-->
 	
 </core:View>

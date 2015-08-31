@@ -1,0 +1,29 @@
+<core:View 	xmlns="sap.ui.commons" 
+xmlns:core="sap.ui.core" 
+xmlns:l="sap.ui.layout"
+xmlns:c="sap.suite.ui.commons"
+xmlns:html="http://www.w3.org/1999/xhtml" >
+
+<Tree title="Site Map">
+	<nodes>
+		<TreeNode text="Home"></TreeNode>
+		<TreeNode text="FFE">
+			<nodes>
+				<TreeNode text="Compatible Unit">
+					<nodes>
+						<TreeNode text="Create"></TreeNode>
+						<TreeNode text="Display"></TreeNode>
+						<TreeNode text="Change"></TreeNode>
+						<TreeNode text="Search"></TreeNode>
+					</nodes>
+				</TreeNode>
+				<TreeNode text="Design Dashboard"></TreeNode>
+				<TreeNode text="Work Order"></TreeNode>
+			</nodes>
+		</TreeNode>
+		<TreeNode text="CCBS"></TreeNode>
+		
+	</nodes>
+</Tree>
+
+</core:View>

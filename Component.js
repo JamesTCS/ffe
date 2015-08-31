@@ -88,7 +88,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 				oShell.setPaneContent(new sap.ui.commons.TextView({text:oDate.toLocaleString()}), true);
 				break;
 			case "pi_browser":
-				oShell.setPaneContent(new sap.ui.commons.TextView({text:"You browser provides the following information:\n"+navigator.userAgent}), true);
+				oShell.setPaneContent(new sap.ui.core.mvc.XMLView({id:"siteMap", viewName:"pge.ffe.pages.home.SiteMap"}), true);
 				break;
 			default:
 				break;

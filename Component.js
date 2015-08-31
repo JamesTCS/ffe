@@ -28,7 +28,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 		                  new sap.ui.ux3.NavigationItem("ccbs2",{key:"ccbs",text:"CCBS Home Screen"})]}),
 		               new sap.ui.ux3.NavigationItem("help",{key:"help",text:"Training & Help Tools"})],
 		paneBarItems: [ new sap.ui.core.Item("PI_Date",{key:"pi_date",text:"date"}),
-		                new sap.ui.core.Item("PI_Browser",{key:"pi_browser",text:"browser"})],
+		                new sap.ui.core.Item("siteMapButton",{key:"site_map",text:"Site Map"})],
 		//content: oHTML,
 		toolPopups: [new sap.ui.ux3.ToolPopup("contactTool",{
 									title: "New Contact",
@@ -53,12 +53,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 		worksetItemSelected: function(oEvent){
 			var sId = oEvent.getParameter("id");
 			var oShell = oEvent.oSource;
-			/* Don't need to delete views myself if use setContent
-			var contents = oShell.getContent();
-			for(var i=0; i < contents.length; i++) {
-				contents[i].destroy();
-			}
-			*/
+		
 			switch (sId) {
 			case "home":
 				oShell.setContent(new sap.ui.core.mvc.XMLView({id:"homepage", viewName:"pge.ffe.pages.home.Home"}), true);
@@ -87,7 +82,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 				var oDate = new Date();
 				oShell.setPaneContent(new sap.ui.commons.TextView({text:oDate.toLocaleString()}), true);
 				break;
-			case "pi_browser":
+			case "site_map":
 				oShell.setPaneContent(new sap.ui.core.mvc.XMLView({id:"siteMap", viewName:"pge.ffe.pages.home.SiteMap"}), true);
 				break;
 			default:
@@ -104,7 +99,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 	 		alert("Feed entry submitted: " + oEvent.getParameter("text"));
 	 	},
 	 	paneClosed : function(oEvent) {
-	 	    alert("Pane has been closed: " + oEvent.getParameter("id"));
+	 	    //alert("Pane has been closed: " + oEvent.getParameter("id"));
 	 	}
 	});
 	//set initial home screen

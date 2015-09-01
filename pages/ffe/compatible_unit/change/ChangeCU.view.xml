@@ -86,15 +86,15 @@
 			   </f:formContainers>
 			   </f:Form>
 	
-    		<f:Form id="refObjForm" minWidth="auto" 
-				maxContainerCols="3" editable="true" title="Reference Objects" >
+    		<f:Form id="refObjForm" minWidth="auto"
+				maxContainerCols="3" editable="true" >
 				<f:title>
-				<core:Title title="Reference Objects" />
+				<core:Title text="Reference Objects" />
 				</f:title>
 				<f:layout>
 				<f:ResponsiveGridLayout labelSpanL="4"
 				labelSpanM="3" emptySpanL="2" emptySpanM="2" columnsL="2"
-				columnsM="1" />
+				columnsM="1"/>
 				</f:layout>
 				<f:formContainers >
 				<f:FormContainer >
@@ -194,6 +194,12 @@
 			<Button id="saveId" type="Accept" text="Save" ></Button>
 		</rightItems>
 	</Toolbar>
+	<!-- CSS 
+	.sapUiFormResGridLbl.sapUiRespGridBreak.sapUiRespGridSpanL3.sapUiRespGridSpanM3.sapUiRespGridSpanS12{
+	padding-top:0px !important;
+	padding-bottom:10px !important;
+}
 
+	-->
 	
 </core:View>

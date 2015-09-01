@@ -9,15 +9,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
 //
 //	},
 
-    toStructureList: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"structureList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList"}), true);
-    },
-    
-    toDisplayMaterial: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"displayMaterial", viewName:"pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial"}), true);
-    },
-    
-    back: function() {
+	back: function() {
     	console.log("here");
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"compatibleUnit", viewName:"pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"}), true);
     },
@@ -28,7 +20,21 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     
     saveAndExit: function() {
     	console.log("Save and Exit");
+    },
+
+    toStructureList: function() {
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"structureList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList"}), true);
+    },
+    
+    toDisplayMaterial: function() {
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"displayMaterial", viewName:"pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial"}), true);
+    },
+    
+    toCreateTaskList: function() {
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.task_list.TaskList"}), true);
     }
+    
+    
 
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

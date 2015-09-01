@@ -93,7 +93,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Button text="Create">
+								<commons:Button text="Create" press="toCreateTaskList">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>

@@ -6,3 +6,12 @@
 	width:120px;
 
 }
+
+.float-right {
+	float: right;
+}
+
+.center {
+	margin-left: 40% !important;
+	margin-right: 40% !important;
+}

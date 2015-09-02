@@ -17,7 +17,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 					   new sap.ui.ux3.NavigationItem("home",{key:"home",text:"Home"}),
 					   new sap.ui.ux3.NavigationItem("create",{key:"create",text:"FFE", subItems:[
 						  new sap.ui.ux3.NavigationItem("find",{key:"find",text:"Compatible Unit"}),
-						  new sap.ui.ux3.NavigationItem("new",{key:"new",text:"Design Dashboard"}),
+						  new sap.ui.ux3.NavigationItem("design_dashboard",{key:"design_dashboard",text:"Design Dashboard"}),
 						  new sap.ui.ux3.NavigationItem("ade",{key:"ade",text:"Work Order"})]}),
 					   new sap.ui.ux3.NavigationItem("ccbs",{key:"ccbs",text:"CCBS"}),
 		               new sap.ui.ux3.NavigationItem("admin",{key:"admin",text:"Admin Tools", subItems:[
@@ -67,8 +67,8 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 			case "help":
 				oShell.setContent(new sap.ui.commons.Label("helpLabel2", {text: "This Page Can Help You!"}), true);
 				break;
-			case "WI_API":
-				oShell.setContent(/*oAPI*/);
+			case "design_dashboard":
+				oShell.setContent(new sap.ui.core.mvc.XMLView({id:"designDashboard", viewName:"pge.ffe.pages.ffe.design_dashboard.DesignDashboard"}), true);
 				break;
 			default:
 				break;

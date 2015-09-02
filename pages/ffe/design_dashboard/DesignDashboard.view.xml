@@ -1,0 +1,95 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.commons.form" xmlns:c="sap.suite.ui.commons" xmlns:m="sap.m"
+	xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns:lc="sap.ui.commons.layout"
+	xmlns="sap.ui.commons" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="pge.ffe.pages.ffe.design_dashboard.DesignDashboard">
+	<!-- panel 1 -->
+	<Label text = "Design Dashboard" id = "titleMain"></Label>
+	<Toolbar>
+		<Button text = "Create Design">
+		</Button>
+		<Button text = "Change / Display">
+		</Button>
+		<Button text = "Save">
+		</Button>
+
+	</Toolbar>
+	<lc:VerticalLayout width ="33%">
+		<lc:content>
+				<Label text="Search Design" id = "title1"></Label>
+				<Toolbar></Toolbar>
+				<lc:HorizontalLayout width = "100%">
+					<lc:VerticalLayout width = "100px">
+						<Label text = "Design Number"></Label>
+					</lc:VerticalLayout>
+					<lc:VerticalLayout>
+						<TextField></TextField>
+					</lc:VerticalLayout>
+				</lc:HorizontalLayout>
+				
+				<lc:HorizontalLayout>
+					<lc:VerticalLayout width = "100px">
+						<Label text = "Description"></Label>
+					</lc:VerticalLayout>
+					<lc:VerticalLayout>
+						<TextField></TextField>
+					</lc:VerticalLayout>			
+				</lc:HorizontalLayout>
+				
+				<lc:HorizontalLayout>
+					<lc:VerticalLayout width = "100px">
+						<Label text = "Design Type"></Label>
+					</lc:VerticalLayout>
+					<lc:VerticalLayout>
+						<TextField></TextField>
+					</lc:VerticalLayout>
+				</lc:HorizontalLayout>	
+				
+				<lc:HorizontalLayout>
+					<lc:VerticalLayout width = "100px">
+						<Label text = "Characteristics" ></Label>
+					</lc:VerticalLayout>
+					<lc:VerticalLayout>
+						<TextField></TextField>
+						<TextField></TextField>
+						<TextField></TextField>
+						<TextField></TextField>
+					</lc:VerticalLayout>				
+				</lc:HorizontalLayout>		
+				<Label text = "Results" id = "table1"></Label>
+				<lc:HorizontalLayout>	
+					<t:Table>
+						<t:Column>
+						</t:Column>
+						<t:Column>
+						</t:Column>
+					</t:Table>
+				</lc:HorizontalLayout>			
+		</lc:content>
+	</lc:VerticalLayout>
+	<!-- panel 2 -->
+	<lc:VerticalLayout width ="33%">
+		<lc:content>
+		<Label text = "Details" class="myClass" id = "title2"></Label>
+		<Toolbar></Toolbar>
+			<lc:HorizontalLayout >
+				<t:TreeTable>
+				</t:TreeTable>
+			</lc:HorizontalLayout>
+		</lc:content>
+	</lc:VerticalLayout>
+	<!-- panel 3 -->
+	<lc:VerticalLayout width ="33%">
+	
+		<lc:content>
+			<lc:HorizontalLayout>
+				<Label text = "Cost Estimate" id = "title3">
+				</Label>
+			</lc:HorizontalLayout>
+			<Toolbar></Toolbar>
+		</lc:content>
+	</lc:VerticalLayout>
+
+
+</core:View>

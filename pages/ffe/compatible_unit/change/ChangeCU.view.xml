@@ -8,11 +8,11 @@
 	xmlns:f="sap.ui.layout.form"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.change.ChangeCU" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<l:HorizontalLayout>
+	<html:h1 class="center">Change Compatible Unit</html:h1>
+	<l:HorizontalLayout class="float-right">
 		<Button text="Back" press="back" />
 		<Button text="Save" press="save" />
 		<Button text="Save &amp; Exit" press="saveAndExit" />
-		<html:h1>Change Compatible Unit</html:h1>
 	</l:HorizontalLayout>
 	<Toolbar>
 	       <rightItems>

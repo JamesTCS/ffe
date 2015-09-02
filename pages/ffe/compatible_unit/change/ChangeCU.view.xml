@@ -10,9 +10,9 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back" press="back" />
-		<Button text="Save" press="save" />
-		<Button text="Save &amp; Exit" press="saveAndExit" />
+		<Button text="Back" press="back" class="right10"/>
+		<Button text="Save" press="save" class="right10"/>
+		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	<Toolbar>
 	       <rightItems>

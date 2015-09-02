@@ -8,9 +8,9 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 		appIcon: "images/pge_header.png",
 		appIconTooltip: "Pacific Gas & Electric",
 		showLogoutButton: true,
-		showSearchTool: true,
+		showSearchTool: false,
 		showInspectorTool: true,
-		showFeederTool: true,
+		showFeederTool: false,
 		headerType: "Standard",
 		deseignType: "Standard",
 		worksetItems: [
@@ -27,10 +27,10 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 		                  new sap.ui.ux3.NavigationItem("trench",{key:"trench",text:"View Trench Rates"}),
 		                  new sap.ui.ux3.NavigationItem("ccbs2",{key:"ccbs",text:"CCBS Home Screen"})]}),
 		               new sap.ui.ux3.NavigationItem("help",{key:"help",text:"Training & Help Tools"})],
-		paneBarItems: [ new sap.ui.core.Item("PI_Date",{key:"pi_date",text:"date"}),
+		paneBarItems: [ 
 		                new sap.ui.core.Item("siteMapButton",{key:"site_map",text:"Site Map"})],
 		//content: oHTML,
-		toolPopups: [new sap.ui.ux3.ToolPopup("contactTool",{
+		/*toolPopups: [new sap.ui.ux3.ToolPopup("contactTool",{
 									title: "New Contact",
 									tooltip: "Create New Contact",
 									icon: "images/Contact_regular.png",
@@ -39,7 +39,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 									buttons: [new sap.ui.commons.Button("cancelContactButton", {text:"Cancel",press:function(oEvent){
 										sap.ui.getCore().byId("contactTool").close();
 									}})]
-								})],
+								})], */
 		headerItems: [new sap.ui.commons.TextView({text:"User Name",tooltip:"U.Name"}),
 		              new sap.ui.commons.Button({text:"Personalize",tooltip:"Personalize",press:function(oEvent){alert("Here could open an personalize dialog");}}),
 									new sap.ui.commons.MenuButton({
@@ -78,10 +78,6 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 			var sKey = oEvent.getParameter("key");
 			var oShell = oEvent.oSource;
 			switch (sKey) {
-			case "pi_date":
-				var oDate = new Date();
-				oShell.setPaneContent(new sap.ui.commons.TextView({text:oDate.toLocaleString()}), true);
-				break;
 			case "site_map":
 				oShell.setPaneContent(new sap.ui.core.mvc.XMLView({id:"siteMap", viewName:"pge.ffe.pages.home.SiteMap"}), true);
 				break;

@@ -88,7 +88,7 @@
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="CU Classification">
+								<commons:Button text="CU Classification" press="toCreateClassification" >
 									<commons:layoutData>
 										<l:GridData span="L2 M3 S5"></l:GridData>
 									</commons:layoutData>

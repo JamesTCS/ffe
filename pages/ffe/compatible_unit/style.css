@@ -23,3 +23,15 @@
 	margin-top: 10px !important;
 }
 
+
+
+/*Change Compatible Unit View */
+
+.sapUiFormResGridLbl.sapUiRespGridBreak.sapUiRespGridSpanL3.sapUiRespGridSpanM3.sapUiRespGridSpanS12{
+	padding-top:0px !important;
+	padding-bottom:10px !important;
+},
+
+.float-right {
+	float: right;
+}

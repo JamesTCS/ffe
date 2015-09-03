@@ -1,7 +1,7 @@
-sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.change.ChangeCU", {
+sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.Change", {
 	
 	onInit: function() { 
-		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/change/style.css","styleLink");
+		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/style.css","styleLink");
 	},
 	
 	back: function() {

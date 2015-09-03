@@ -1,0 +1,24 @@
+pageTitle{
+	padding-top:20px ;
+	padding-bottom:20px ;
+	font-size:14px ;
+	font-weight:bold;
+	text-align:center;
+}
+				
+.sapMFlexItem{
+	margin-left: auto !important;
+    margin-right: auto !important;
+}
+				
+.tableStyle{
+	padding-top:20px !important;
+	padding-bottom:10px !important;
+	padding-left:20px !important;
+	padding-right:20px !important;
+}
+
+.sapUiTbInner{
+		padding-left:20px !important;
+	    padding-right:20px !important;
+}

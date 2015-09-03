@@ -11,7 +11,7 @@
 	
 	<html:h1 class="center">Task List   </html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back" press="back" class="right10"/>
+		<Button text="Back" press="back" class="right10" />
 		<Button text="Save" press="save" class="right10"/>
 		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>

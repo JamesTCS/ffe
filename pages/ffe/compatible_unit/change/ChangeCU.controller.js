@@ -1,7 +1,6 @@
 sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.change.ChangeCU", {
 	
 	onInit: function() { 
-		console.log("hello/1");
 		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/change/style.css","styleLink");
 	},
 	
@@ -10,6 +9,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.change.ChangeCU", {
     },
     
     toNewTaskList: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.TaskList"}), true);
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.Create"}), true);
     }
 });

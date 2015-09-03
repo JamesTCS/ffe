@@ -15,7 +15,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CompatibleUnit", {
 		
 		toChange: function() {
 			console.log("change");
-			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"changeCU", viewName:"pge.ffe.pages.ffe.compatible_unit.change.ChangeCU"}), true);
+			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"changeCU", viewName:"pge.ffe.pages.ffe.compatible_unit.Change"}), true);
 		}
 
 	/**

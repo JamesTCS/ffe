@@ -6,7 +6,7 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:t="sap.ui.table"
 	xmlns:f="sap.ui.layout.form"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.change.ChangeCU" 
+	controllerName="pge.ffe.pages.ffe.compatible_unit.Change" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">

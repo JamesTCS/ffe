@@ -1,0 +1,110 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:table="sap.ui.table"
+	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj">
+	
+	<html:h1 class="center">Create Technical Object: Equipment</html:h1>
+	<l:HorizontalLayout class="float-right">
+		<Button text="Back" press="back" class="right10"/>
+		<Button text="Save" press="save" class="right10"/>
+		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+	</l:HorizontalLayout>
+	
+	<Panel>
+		<form:Form>
+			<form:formContainers>
+				<form:FormContainer>
+					<form:formElements>
+						<form:FormElement label="Equipment">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:Label text="Description:" style="text-align:right !important;">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L3 M3 S3"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Category">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:Label text="Valid From:" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:DatePicker>
+								<commons:Label text="Valid To:" style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:DatePicker>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="">
+							<form:fields>
+								
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Object Type">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Label text="Class:">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+							</form:fields>
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:layout>
+				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
+			</form:layout>
+		</form:Form>
+	</Panel>
+	
+</core:View>

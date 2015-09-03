@@ -12,39 +12,10 @@
 	</l:HorizontalLayout>
 	
 	<Panel>
-		<l:HorizontalLayout>
-			<commons:Button text="Back" press="back" />
-			<commons:Button text="Save" press="save" />
-			<commons:Button text="Save &amp; Exit" press="saveAndExit" />
-		</l:HorizontalLayout>
 		<form:Form>
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
-						<form:FormElement>
-							<form:fields>
-								<commons:Label>
-									<commons:layoutData>
-										<l:GridData span="L9 M9 S9"></l:GridData>
-									</commons:layoutData>
-								</commons:Label>
-								<commons:Button text="Save">
-									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
-									</commons:layoutData>
-								</commons:Button>
-								<commons:Button text="Save &amp; Exit">
-									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
-									</commons:layoutData>
-								</commons:Button>
-								<commons:Button text="Exit">
-									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
-									</commons:layoutData>
-								</commons:Button>
-							</form:fields>
-						</form:FormElement>
 						<form:FormElement label="CU ID">
 							<form:fields>
 								<commons:TextField>
@@ -136,19 +107,67 @@
 								</commons:layoutData>
 							</commons:Button>
 						</form:FormElement>
-						<form:FormElement label="">
-							<commons:Label text="Function Location">
-								<commons:layoutData>
-									<l:GridData span="L2 M2 S2"></l:GridData>
-								</commons:layoutData>
-							</commons:Label>
+						<form:FormElement label="Function Location">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Button text="Create" press="toCreateFunctionalLoc">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Change">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Display">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Where Used">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Equipment">
+							<form:fields>
+								<commons:TextField>
+									<commons:layoutData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:TextField>
+								<commons:Button text="Create" press="toCreateEquipment">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Change">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Display">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+								<commons:Button text="Where Used">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+							</form:fields>
 						</form:FormElement>
 					</form:formElements>
 				</form:FormContainer>
 			</form:formContainers>
-			<form:title>
-				<core:Title text="Create CU"></core:Title>
-			</form:title>
 			<form:layout>
 				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
 			</form:layout>

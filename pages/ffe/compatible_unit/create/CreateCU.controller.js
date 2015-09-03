@@ -32,6 +32,14 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     
     toCreateTaskList: function() {
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.task_list.TaskList"}), true);
+    },
+    
+    toCreateFunctionalLoc: function(){
+    	//TODO: Navigate to Create Functional Location once that view is integrated
+    },
+    
+    toCreateEquipment: function(){
+			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"changeCU", viewName:"pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj"}), true);
     }
     
     

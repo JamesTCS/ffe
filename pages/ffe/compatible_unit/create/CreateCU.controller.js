@@ -5,9 +5,9 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf structure_list.StructureList
 */
-//	onInit: function() {
-//
-//	},
+	onInit: function() {
+		console.log("onCreateCU");
+	},
 
 	back: function() {
     	console.log("here");
@@ -32,6 +32,11 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     
     toCreateTaskList: function() {
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.task_list.TaskList"}), true);
+    },
+    
+    toCreateClassification: function() {
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createClassification", viewName:"pge.ffe.pages.ffe.compatible_unit.classification.Create"}), true);
     }
     
     

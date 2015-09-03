@@ -1,0 +1,95 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons" 
+	xmlns:m= "sap.m"
+	xmlns:ui="sap.ca.ui"
+	xmlns:l="sap.ui.layout"
+	xmlns:t="sap.ui.table"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="pge.ffe.pages.ffe.compatible_unit.classification.Create" >
+	<m:HBox class= "centerText">
+	<TextView id="titleId" class="pageTitle" text="CU Classification"></TextView> 
+	</m:HBox>
+	<Toolbar>
+			<items>
+			   <TextView id="cuId" text="Compatible Unit"></TextView> 
+		       <TextField id="cuInput1"></TextField>
+		       <TextField id="cuInput2"></TextField>	
+			</items>
+			<rightItems>
+		       <Button id="savebtn" icon="sap-icon://save" text="Save"></Button>
+		       <Button id="extbtn" icon="sap-icon://system-exit" text="Exit" press="back" ></Button>
+			   <Button id="sebtn"  text="Save and Exit"></Button>
+			</rightItems>
+	</Toolbar>
+		<!--Assignments Table -->
+			<t:Table id="assignmentsTable" 
+				growing="true" growingScrollToLoad="true" title="Assignments" class="tableStyle">
+		       
+				<t:columns id="assignmentsTable_columns">
+					<t:Column id="assignmentsTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top"  >
+						<t:label> <Label text="Standard Class"></Label></t:label>
+					</t:Column>
+					
+					<t:Column id="assignmentsTable_columns_col2"  width="14%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="">
+						<t:label> <Label text="Status"></Label></t:label>
+					</t:Column>
+					
+					<t:Column id="assignmentsTable_columns_col3" width="14%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="qty">
+						<t:label> <Label text="Item"></Label></t:label>
+					</t:Column>
+				</t:columns>
+					<t:rows id="assignmentsListItem_cells"> 
+						
+					</t:rows>
+			</t:Table>
+			<!--Characteristic Values Table -->
+			<t:Table id="charValTable" 
+				growing="true" growingScrollToLoad="true" title="Characteristic Values" class="tableStyle">
+		       
+				<t:columns id="charValTable_columns">
+					<t:Column id="charValTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top"  >
+						<t:label> <Label text="Characteristic Description"></Label></t:label>
+					</t:Column>
+					
+					<t:Column id="charValTable_columns_col2"  width="14%" minScreenWidth="Tablet" demandPopin="true"
+						hAlign="Left" vAlign="Top" name="">
+						<t:label> <Label text="Characteristic Value"></Label></t:label>
+					</t:Column>
+			
+				</t:columns>
+					<t:rows id="charValListItem_cells"> 
+						
+					</t:rows>
+			</t:Table>
+			<!-- this view styling -->
+				<!--.pageTitle{
+					padding-top:20px ;
+					padding-bottom:20px ;
+					font-size:14px ;
+					font-weight:bold;
+					text-align:center;
+				}
+				
+				.sapMFlexItem{
+					margin-left: auto !important;
+				    margin-right: auto !important;
+				}
+				
+				.tableStyle{
+					padding-top:20px !important;
+					padding-bottom:10px !important;
+					padding-left:20px !important;
+					padding-right:20px !important;
+				}
+				.sapUiTbInner{
+						padding-left:20px !important;
+					    padding-right:20px !important;
+				}-->
+	
+</core:View>

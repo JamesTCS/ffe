@@ -23,22 +23,22 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     },
 
     toStructureList: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"structureList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"structureList", viewName:"pge.ffe.pages.ffe.compatible_unit.structure_list.StructureList"}), true);
     },
     
     toDisplayMaterial: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"displayMaterial", viewName:"pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"displayMaterial", viewName:"pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial"}), true);
     },
     
     toCreateTaskList: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.create.task_list.TaskList"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.TaskList"}), true);
     },
     toCreateFunctionalLoc: function(){
-    	//TODO: Navigate to Create Functional Location once that view is integrated
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createFuncLoc", viewName:"pge.ffe.pages.ffe.compatible_unit.functional_location.CreateFL"}), true);
     },
     
     toCreateEquipment: function(){
-			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"changeCU", viewName:"pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj"}), true);
+			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTechObj", viewName:"pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj"}), true);
     },
     
     toCreateClassification: function() {

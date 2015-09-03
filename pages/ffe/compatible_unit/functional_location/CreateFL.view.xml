@@ -1,0 +1,69 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:c="sap.ui.commons" xmlns:l="sap.ui.layout" xmlns:t="sap.ui.table"
+		controllerName="pge.ffe.pages.ffe.compatible_unit.functional_location.CreateFL" xmlns:html="http://www.w3.org/1999/xhtml">
+		<l:VerticalLayout>
+		
+			<html:h1 class="center">Create Functional Location</html:h1>
+			<l:HorizontalLayout class="float-right">
+				<Button text="Back" press="back" class="right10"/>
+				<Button text="Save" press="save" class="right10"/>
+				<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+			</l:HorizontalLayout>
+			
+			<l:HorizontalLayout>
+				<!-- Column 1 -->
+				<l:VerticalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Functional Location: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Description: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Plant Section: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="ABC Indicator: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+				</l:VerticalLayout>
+				<!-- Column 2 -->
+				<l:VerticalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Category: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Room: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Location: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>
+					<l:HorizontalLayout>
+						<c:Label text ="Maintenance Plant: "></c:Label>
+						<c:TextField></c:TextField>
+					</l:HorizontalLayout>				
+				</l:VerticalLayout>
+			</l:HorizontalLayout>
+			
+			<c:Toolbar>
+				<c:Button text= "Select Structure List"></c:Button>	
+			</c:Toolbar>
+			
+			<c:Label text = "Asset"></c:Label>
+			<t:Table>
+				<t:Column>
+				</t:Column>
+				<t:Column>
+				</t:Column>
+				<t:Column>
+				</t:Column>
+			</t:Table>	
+			
+		</l:VerticalLayout>
+</core:View>

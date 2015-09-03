@@ -75,7 +75,7 @@
 				<f:fields>
 					<TextField id="tLId" width="150px"  type="Text" value=""
 						class="" />
-					<Button id="newId" text="New" ></Button>
+					<Button id="newId" text="New" press="toNewTaskList" ></Button>
 					<Button id="editId" text="Edit" ></Button>
 					<Button id="viewId" text="View" ></Button>
 					<Button id="wUsedId" text="Where Used" ></Button>

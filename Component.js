@@ -50,6 +50,8 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 											new sap.ui.commons.MenuItem("menuitem2",{text:"Report Incident"}),
 											new sap.ui.commons.MenuItem("menuitem3",{text:"About"})]})
 									})],
+									
+		
 		worksetItemSelected: function(oEvent){
 			var sId = oEvent.getParameter("id");
 			var oShell = oEvent.oSource;

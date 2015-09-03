@@ -1,8 +1,7 @@
-sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.task_list.TaskList", {
+sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.task_list.Create", {
 	
 	onInit: function() {
-		console.log("here");
-		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/create/task_list/style.css","styleLink");
+		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/task_list/style.css","styleLink");
 	},
 	
 	back: function() {

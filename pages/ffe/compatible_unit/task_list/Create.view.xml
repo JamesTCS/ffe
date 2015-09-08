@@ -12,7 +12,7 @@
 	<html:h1 class="center">Task List   </html:h1>
 	<l:HorizontalLayout class="float-right">
 		<Button text="Back" press="back" class="right10" />
-		<Button text="Save" icon="../images/save.png" press="save" class="right10"/>
+		<Button text="Save" icon="/images/save.png" press="save" class="right10"/>
 		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	
@@ -176,7 +176,7 @@
 		<Toolbar>
 		<rightItems>
 			<Button id="displayId" type="Emphasized" text="Display" ></Button>
-			<Button id="saveId" type="Accept" icon="../images/save.png" text="Save" ></Button>
+			<Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></Button>
 		</rightItems>
 	</Toolbar>
 	

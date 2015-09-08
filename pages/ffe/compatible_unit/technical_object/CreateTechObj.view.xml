@@ -2,7 +2,7 @@
 	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:table="sap.ui.table"
 	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj">
+	controllerName="pge.ffe.pages.ffe.compatible_unit.technical_object.CreateTechObj">
 	
 	<html:h1 class="center">Create Technical Object: Equipment</html:h1>
 	<l:HorizontalLayout class="float-right">

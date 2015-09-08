@@ -1,4 +1,4 @@
-sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList", {
+sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.structure_list.StructureList", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.

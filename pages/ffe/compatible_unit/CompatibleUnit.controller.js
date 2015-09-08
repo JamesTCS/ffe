@@ -9,10 +9,10 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CompatibleUnit", {
 			
 		},
 		
-		onCreate: function() {
-			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createCU", viewName:"pge.ffe.pages.ffe.compatible_unit.create.CreateCU"}), true);                         
+		toCreate: function() {
+			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createCU", viewName:"pge.ffe.pages.ffe.compatible_unit.CreateCU"}), true);                         
 		},
-		
+		 
 		toChange: function() {
 			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"changeCU", viewName:"pge.ffe.pages.ffe.compatible_unit.Change"}), true);
 		}

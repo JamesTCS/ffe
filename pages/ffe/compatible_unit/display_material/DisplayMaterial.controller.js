@@ -1,4 +1,4 @@
-sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.display_material.DisplayMaterial", {
+sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.

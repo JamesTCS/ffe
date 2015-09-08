@@ -40,7 +40,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<m:Button text="Clear" class="left10" />
 			<m:Button text="Display" icon="/images/view.png" class="left25" />
 			<m:Button text="Change" icon="/images/edit.png" class="left10" press="toChange" /> 
-			<m:Button text="Create" icon="/images/new.png" class="left10" press="onCreate"/>
+			<m:Button text="Create" icon="/images/new.png" class="left10" press="toCreate"/>
 		</l:HorizontalLayout>
 		
 		<!--

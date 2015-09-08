@@ -1,3 +1,4 @@
+/* Shell CSS */
 .sapUiUx3NavBarItem{
 	font-size:15pt!important;
 }
@@ -6,6 +7,13 @@
 	width:120px;
 
 }
+
+
+.sapUiUx3NavBar {
+	background-color: orange;
+}
+
+/* Global View CSS */
 
 .float-right {
 	float: right;

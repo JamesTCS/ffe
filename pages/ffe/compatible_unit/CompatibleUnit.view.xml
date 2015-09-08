@@ -6,7 +6,7 @@ xmlns:t="sap.ui.table"
 xmlns:html="http://www.w3.org/1999/xhtml"
 controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 	
-	<html:h1>Compatible Unit</html:h1>
+	<html:h1 class="center" >Compatible Unit</html:h1>
 	<l:VerticalLayout>
 		<l:HorizontalLayout>
 			<Label text="Select Area:" class="left10" /> 
@@ -36,7 +36,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 		
 		<!-- Old Buttons -->
 		<l:HorizontalLayout class="top25">
-			<m:Button text="Search" />  
+			<m:Button text="Search" icon="/images/search.png" />  
 			<m:Button text="Clear" class="left10" />
 			<m:Button text="Display" icon="/images/view.png" class="left25" />
 			<m:Button text="Change" icon="/images/edit.png" class="left10" press="toChange" /> 

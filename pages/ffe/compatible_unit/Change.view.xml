@@ -11,9 +11,9 @@
 	
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back"  press="back" class="right10"/>
-		<Button text="Save" icon="images/save.png" press="save" class="right10"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+		<m:Button text="Back"  press="back" class="right10"/>
+		<m:Button text="Save" icon="images/save.png" press="save" class="right10"/>
+		<m:Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	<Toolbar>
 	       <rightItems>
@@ -76,10 +76,10 @@
 				<f:fields>
 					<TextField id="tLId" width="150px"  type="Text" value=""
 						class="" />
-					<Button id="newId" text="New" icon="/images/new.png" press="toNewTaskList" ></Button>
-					<Button id="editId" icon="/images/edit.png" text="Edit" ></Button>
-					<Button id="viewId" icon="/images/view.png" text="View" ></Button>
-					<Button id="wUsedId" text="Where Used" ></Button>
+					<m:Button id="newId" text="New" icon="/images/new.png" press="toNewTaskList" ></m:Button>
+					<m:Button id="editId" icon="/images/edit.png" text="Edit" ></m:Button>
+					<m:Button id="viewId" icon="/images/view.png" text="View" ></m:Button>
+					<m:Button id="wUsedId" text="Where Used" ></m:Button>
 			   </f:fields>
 			   </f:FormElement>
 			   </f:formElements>
@@ -127,9 +127,9 @@
 				<f:fields>
 					<TextField id="eqId" width="150px"  type="Text" value=""
 						class="" />
-					<Button id="rObjNewId" text="New" ></Button>
-					<Button id="rObjEditId" text="Edit" ></Button>
-					<Button id="rObjViewId" text="View" ></Button>
+					<m:Button id="rObjNewId" icon="/images/new.png" text="New" ></m:Button>
+					<m:Button id="rObjEditId" icon="/images/edit.png" text="Edit" ></m:Button>
+					<m:Button id="rObjViewId" icon="/images/view.png" text="View" ></m:Button>
 			   </f:fields>
 			   </f:FormElement>
 			   </f:formElements>
@@ -191,8 +191,8 @@
 			</t:Table>	
 		<Toolbar>
 		<rightItems>
-			<Button id="displayId" type="Emphasized" icon="/images/view.png" text="Display" ></Button>
-			<Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></Button>
+			<m:Button id="displayId" type="Emphasized" icon="/images/view.png" text="Display" ></m:Button>
+			<m:Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></m:Button>
 		</rightItems>
 	</Toolbar>
 	<!-- CSS 

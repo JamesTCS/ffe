@@ -26,15 +26,19 @@
 
 /* Create Compatible Unit View */
 
-.orangeButton{
-	background-color: #ffb253 !important;
+.orangeButton>.sapMBtnInner{
+	background: linear-gradient(to bottom, #ffb253,#ffb253) !important;
+	font-shadow: 0 0px 0 #ffffff !important;
 }
 
-.orangeButton .sapMBtnInner{
-	background-color: #ffb253 !important;
+.blueButton{
+	background: #00c8f8 !important;
+	font-shadow: 0 0px 0 #ffffff !important;
 }
 
-
+.sapUiRespGridBreak{
+	padding-bottom: 15px !important;
+}
 
 /*Change Compatible Unit View */
 

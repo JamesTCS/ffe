@@ -4,7 +4,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.CreateCU">
 	<Panel>
-	<html:h1 class="center">Create Compatible Unit</html:h1>
+	<html:h1 class="center">Compatible Unit - Create</html:h1>
 	<l:HorizontalLayout class="float-right">
 		<Button text="Save" tooltip="Save" press="save" class="right10 saveButton" icon="images/save.png"/>
 		<Button text="Back" tooltip="Back" press="back" class="right10 backButton" icon="images/exit.png"/>
@@ -16,7 +16,7 @@
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
-						<form:FormElement label="CU ID">
+						<form:FormElement class="formMargin" label="CU ID">
 							<form:fields>
 								<commons:TextField>
 									<commons:layoutData>
@@ -40,16 +40,9 @@
 								</commons:Label>
 								<commons:TextField>
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label text="Valid From" style="text-align:right">
-									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
-									</commons:layoutData>
-								</commons:Label>
-								<commons:DatePicker>
-								</commons:DatePicker>
 							</form:fields>
 						</form:FormElement>
 						<form:FormElement label="Base Unit">
@@ -59,10 +52,21 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label>
+								<commons:Label text="Valid From: " style="text-align:right">
 									<commons:layoutData>
-										<l:GridData span="L4 M4 S4"></l:GridData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+								</commons:DatePicker>
+								<commons:Label text="Valid To: " style="text-align:right">
+									<commons:layoutData>
+										<l:GridData span="L1 M1 S1"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:DatePicker>
+								</commons:DatePicker>
+								<commons:Label>
 								</commons:Label>
 							</form:fields>
 						</form:FormElement>
@@ -73,24 +77,19 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Button text="Create" press="toCreateTaskList">
+								<commons:Button tooltip="Create Task List" text="Create" press="toCreateTaskList" icon="images/new_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Change">
+								<commons:Button tooltip="Change Task List" text="Change" icon="images/edit_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Display">
+								<commons:Button tooltip="Display Task List" text="Display" icon="images/view_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
-									</commons:layoutData>
-								</commons:Button>
-								<commons:Button text="CU Classification" press="toCreateClassification" >
-									<commons:layoutData>
-										<l:GridData span="L2 M3 S5"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 							</form:fields>
@@ -101,11 +100,6 @@
 									<l:GridData span="L2 M2 S2"></l:GridData>
 								</commons:layoutData>
 							</commons:TextField>
-							<commons:Button text="Equipment">
-								<commons:layoutData>
-									<l:GridData span="L3 M3 S3"></l:GridData>
-								</commons:layoutData>
-							</commons:Button>
 						</form:FormElement>
 						<form:FormElement label="Function Location">
 							<form:fields>
@@ -114,24 +108,24 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Button text="Create" press="toCreateFunctionalLoc">
+								<commons:Button tooltip="Create Function Location" text="Create" press="toCreateFunctionalLoc" icon="images/new_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Change">
+								<commons:Button tooltip="Change Function Location" text="Change" icon="images/edit_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Display">
+								<commons:Button tooltip="Display Function Location" text="Display" icon="images/edit_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Where Used">
+								<commons:Button class="blueButton" text="Where Used">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 							</form:fields>
@@ -143,24 +137,24 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Button text="Create" press="toCreateEquipment">
+								<commons:Button tooltip="Create Equipment" text="Create" press="toCreateEquipment" icon="images/new_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Change">
+								<commons:Button tooltip="Change Equipment" text="Change" icon="images/edit_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Display">
+								<commons:Button tooltip="Display Equipment" text="Display" icon="images/view_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button text="Where Used">
+								<commons:Button class="blueButton" text="Where Used">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 							</form:fields>

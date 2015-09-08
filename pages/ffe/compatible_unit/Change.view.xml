@@ -11,8 +11,8 @@
 	
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back" press="back" class="right10"/>
-		<Button text="Save" press="save" class="right10"/>
+		<Button text="Back"  press="back" class="right10"/>
+		<Button text="Save" icon="images/save.png" press="save" class="right10"/>
 		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	<Toolbar>
@@ -76,9 +76,9 @@
 				<f:fields>
 					<TextField id="tLId" width="150px"  type="Text" value=""
 						class="" />
-					<Button id="newId" text="New" press="toNewTaskList" ></Button>
-					<Button id="editId" text="Edit" ></Button>
-					<Button id="viewId" text="View" ></Button>
+					<Button id="newId" text="New" icon="/images/new.png" press="toNewTaskList" ></Button>
+					<Button id="editId" icon="/images/edit.png" text="Edit" ></Button>
+					<Button id="viewId" icon="/images/view.png" text="View" ></Button>
 					<Button id="wUsedId" text="Where Used" ></Button>
 			   </f:fields>
 			   </f:FormElement>
@@ -191,8 +191,8 @@
 			</t:Table>	
 		<Toolbar>
 		<rightItems>
-			<Button id="displayId" type="Emphasized" text="Display" ></Button>
-			<Button id="saveId" type="Accept" text="Save" ></Button>
+			<Button id="displayId" type="Emphasized" icon="/images/view.png" text="Display" ></Button>
+			<Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></Button>
 		</rightItems>
 	</Toolbar>
 	<!-- CSS 

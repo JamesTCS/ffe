@@ -7,6 +7,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
 */
 	onInit: function() {
 		console.log("onCreateCU");
+		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/create/style.css","styleLink");
 	},
 
 	back: function() {

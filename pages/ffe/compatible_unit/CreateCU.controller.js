@@ -31,7 +31,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CreateCU", {
     },
     
     toCreateTaskList: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.TaskList"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.Create"}), true);
     },
     toCreateFunctionalLoc: function(){
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createFuncLoc", viewName:"pge.ffe.pages.ffe.compatible_unit.functional_location.CreateFL"}), true);

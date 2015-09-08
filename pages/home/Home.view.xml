@@ -15,30 +15,25 @@ controllerName="pge.ffe.pages.home.Home" >
 </Panel>
 
 <Panel class="right" >
-<l:VerticalLayout>
-<Label text="Links" class="head"/>
-<Link text="Contact Us"
-      press="handleLinkPress" />
-     
-      <Link text="PG&amp;E Intranet Website"
-      press="handleLinkPress" />
-      <Link text="Gas"
-      press="handleLinkPress" />
-      <Link text="Electric"
-      press="handleLinkPress" />
-      </l:VerticalLayout>
-      <l:VerticalLayout class="center">
-      <Link text="Plant Lookup"
-      press="handleLinkPress" />
-      <Link text="Audits"
-      press="handleLinkPress" />
-      <Link text="Reporting Tool"
-      press="handleLinkPress" />
-      <Link text="Plant Lookup"
-      press="handleLinkPress" />
-      <Link text="Distributors"
-      press="handleLinkPress" />
-</l:VerticalLayout>
+    <l:VerticalLayout>
+		<Label text="Links" class="head"/>
+		<l:HorizontalLayout>
+			<l:VerticalLayout>
+				
+				<Link text="Contact Us" press="handleLinkPress" />
+		        <Link text="PG&amp;E Intranet Website" press="handleLinkPress" />
+		        <Link text="Gas" press="handleLinkPress" />
+		        <Link text="Electric" press="handleLinkPress" />
+		    </l:VerticalLayout>
+		    <l:VerticalLayout class="left25">
+		        <Link text="Plant Lookup" press="handleLinkPress" />
+		        <Link text="Audits" press="handleLinkPress" />
+		        <Link text="Reporting Tool" press="handleLinkPress" />
+		        <Link text="Plant Lookup" ss="handleLinkPress" />
+		        <Link text="Distributors" press="handleLinkPress" />
+		    </l:VerticalLayout>
+		</l:HorizontalLayout>
+	</l:VerticalLayout>
 <!--  <Image src="css/streetlight.png" class="right1" width="35%"/>-->
 </Panel>
 

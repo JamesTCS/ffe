@@ -2,13 +2,13 @@
 	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:table="sap.ui.table"
 	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.create.CreateCU">
+	controllerName="pge.ffe.pages.ffe.compatible_unit.CreateCU">
 	<Panel>
 	<html:h1 class="center">Create Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">
 		<Button text="Save" tooltip="Save" press="save" class="right10 saveButton" icon="images/save.png"/>
 		<Button text="Back" tooltip="Back" press="back" class="right10 backButton" icon="images/exit.png"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>\
+		<Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
 	</l:HorizontalLayout>
 	
 	

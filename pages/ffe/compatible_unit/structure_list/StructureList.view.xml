@@ -1,7 +1,7 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns="sap.ui.commons"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.create.structure_list.StructureList">
+	controllerName="pge.ffe.pages.ffe.compatible_unit.structure_list.StructureList">
 		<html:h1 class="center">Structure List     </html:h1>
 		<l:HorizontalLayout class="float-right">
 			<Button text="Back" press="back" class="right10"/>

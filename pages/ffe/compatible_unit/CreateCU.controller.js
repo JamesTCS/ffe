@@ -1,4 +1,4 @@
-sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
+sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CreateCU", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -6,8 +6,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
 * @memberOf structure_list.StructureList
 */
 	onInit: function() {
-		console.log("onCreateCU");
-		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/create/style.css","styleLink");
+		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/style.css","styleLink");
 	},
 
 	back: function() {
@@ -39,7 +38,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.create.CreateCU", {
     },
     
     toCreateEquipment: function(){
-			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTechObj", viewName:"pge.ffe.pages.ffe.compatible_unit.technical_object.create.CreateTechObj"}), true);
+			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTechObj", viewName:"pge.ffe.pages.ffe.compatible_unit.technical_object.CreateTechObj"}), true);
     },
     
     toCreateClassification: function() {

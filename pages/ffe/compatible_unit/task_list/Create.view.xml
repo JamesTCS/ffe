@@ -11,9 +11,9 @@
 	
 	<html:h1 class="center">Task List   </html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back" press="back" class="right10" />
-		<Button text="Save" icon="/images/save.png" press="save" class="right10"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+		<m:Button text="Save" icon="/images/save.png" press="save" class="right10"/>
+		<m:Button text="Back" icon="/images/exit.png" press="back" class="right10" />
+		<m:Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	
     	<l:Grid defaultSpan="L12 M12 S12" hSpacing="0.05" vSpacing="1"

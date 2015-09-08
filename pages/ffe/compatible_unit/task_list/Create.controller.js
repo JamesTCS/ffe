@@ -5,6 +5,6 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.task_list.Create", {
 	},
 	
 	back: function() {
-    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createTaskList", viewName:"pge.ffe.pages.ffe.compatible_unit.change.ChangeCU"}), true);
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createCU", viewName:"pge.ffe.pages.ffe.compatible_unit.CreateCU"}), true);
     }
 });

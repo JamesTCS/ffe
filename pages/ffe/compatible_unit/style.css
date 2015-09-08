@@ -36,6 +36,11 @@
 	font-shadow: 0 0px 0 #ffffff !important;
 }
 
+.bottomButton{
+	margin-top: 5px !important;
+	margin-right: 10px !important;
+}
+
 .sapUiRespGridBreak{
 	padding-bottom: 15px !important;
 }

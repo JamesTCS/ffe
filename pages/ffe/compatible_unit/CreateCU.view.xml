@@ -185,8 +185,13 @@
 				</table:Column>
 			</table:columns>
 		</table:Table>
-		<commons:Button text="Add Item"></commons:Button>
-		<commons:Button text="Delete Item"></commons:Button>
+		<l:HorizontalLayout>
+			<commons:Button class="blueButton bottomButton" text="Add Item"/>
+			<commons:Button class="blueButton bottomButton" text="Delete Item"/>
+			<commons:Button class="blueButton bottomButton" text="Copy"/>
+			<commons:Button class="blueButton bottomButton" text="Lock"/>
+			<commons:Button class="blueButton bottomButton" text="Planned/Actual Cost Comparison"/>
+		</l:HorizontalLayout>
 	</Panel>
 	
 </core:View>

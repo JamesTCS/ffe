@@ -22,14 +22,12 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<l:HorizontalLayout>
 				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
 				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label text="Valid To:" class="spacing left25" /><TextField class="right10 top10" />
 			</l:HorizontalLayout>
 			<l:HorizontalLayout>
 				<Label text="Created BY:" class="spacing" /><TextField class="right10 top10" />
 				<Label text="Task List Group:" class="spacing left25" /><TextField class="right10 top10" />
-			</l:HorizontalLayout>
-			<l:HorizontalLayout>
-				<Label text="Valid From:" class="spacing" /><TextField class="right10 top10" />
-				<Label text="Valid To:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label text="Valid From:" class="spacing left25" /><TextField class="right10 top10" />
 			</l:HorizontalLayout>
 			
 		</l:VerticalLayout>
@@ -37,7 +35,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 		<l:HorizontalLayout class="top25">
 			<Button text="Search" />  <Button text="Display" class="left10" /> <Button text="Change" class="left10" press="toChange" /> <Button text="Create" class="left10" press="onCreate"/>
 		</l:HorizontalLayout>
-		<t:Table>
+		<t:Table class="top10" >
 			<t:columns>
 				<t:Column name="test"><t:label><Label text="col1"/></t:label></t:Column>
 				<t:Column name="test"></t:Column>

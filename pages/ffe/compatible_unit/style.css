@@ -33,6 +33,10 @@
 .orangeButton .sapMBtnInner{
 	background-color: #ffb253 !important;
 }
+.bottom10{
+	margin-bottom:20px !important;
+}
+
 
 
 
@@ -47,6 +51,15 @@
 	float: right;
 }
 
+.sapMBtnContent.buttonStyle{
+	background-color:red !important;
+}
+/*.sapMBtnDefault.sapMBtnInner{
+	color:red !important;
+}
+.buttonStyle.sapMBtn.sapMBtnBase{
+	color:red !important;
+}*/
 /*.sapUiTableHdr.tableHeaderStyle{
 	font-size:5px !important;
 	font-weight:normal !important;

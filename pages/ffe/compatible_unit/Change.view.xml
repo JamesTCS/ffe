@@ -140,7 +140,7 @@
     	</l:Grid>
 		<!--Sub Items Table -->
 			<t:Table id="subItemsTable" 
-				growing="true" growingScrollToLoad="true" title="Sub Items">
+				growing="true" growingScrollToLoad="true" title="Sub Items" class="tableHeaderStyle">
 				
 				<t:columns id="subItemsTable_columns">
 					<t:Column id="subItemsTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"

@@ -5,9 +5,9 @@
 		
 			<html:h1 class="center">Create Functional Location</html:h1>
 			<l:HorizontalLayout class="float-right">
-				<Button text="Back" icon="/images/exit.png" press="back" class="right10"/>
-				<Button text="Save" icon="/images/save.png" press="save" class="right10"/>
-				<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+				<c:Button text="Back" icon="/images/exit_small.png" press="back" class="right10"/>
+				<c:Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
+				<c:Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
@@ -31,6 +31,7 @@
 					</l:HorizontalLayout>
 				</l:VerticalLayout>
 				<!-- Column 2 -->
+				<Label text="" width="80px" />
 				<l:VerticalLayout class="left80">
 					<l:HorizontalLayout>
 						<c:Label text ="Category: " width="130px" class="top10"></c:Label>

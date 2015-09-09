@@ -34,7 +34,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			
 		</l:VerticalLayout>
 		
-		<!-- Old Buttons -->
+		<!-- Old Buttons 
 		<l:HorizontalLayout class="top25">
 			<m:Button text="Search" icon="/images/search.png" />  
 			<m:Button text="Clear" class="left10" />
@@ -42,6 +42,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<m:Button text="Change" icon="/images/edit.png" class="left10" press="toChange" /> 
 			<m:Button text="Create" icon="/images/new.png" class="left10" press="toCreate"/>
 		</l:HorizontalLayout>
+		-->
 		
 		<!--
 		<l:HorizontalLayout class="top25">
@@ -51,6 +52,18 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<core:Icon src="/image-->
 		
 		<t:Table class="top10" >
+			<t:title>
+				<TextView text="Compatible Units"></TextView>
+			</t:title>
+			<t:extension>
+				<l:HorizontalLayout>
+					<Button text="Display" icon="/images/view_small.png"/>
+					<Button text="Change" icon="/images/edit_small.png" class="left10" press="toChange" /> 
+					<Button text="Create" icon="/images/new_small.png" class="left10" press="toCreate"/>
+					<Button text="Search" icon="/images/search_small.png" class="left10"/>
+					<Button text="Reset" icon="images/exit_small" class="left10" />
+				</l:HorizontalLayout>
+			</t:extension>
 			<t:columns>
 				<t:Column name="test"><t:label><Label text="col1"/></t:label></t:Column>
 				<t:Column name="test"></t:Column>

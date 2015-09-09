@@ -118,7 +118,7 @@
 										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
-								<commons:Button tooltip="Display Function Location" text="Display" icon="images/edit_small.png">
+								<commons:Button tooltip="Display Function Location" text="Display" icon="images/view_small.png">
 									<commons:layoutData>
 										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>

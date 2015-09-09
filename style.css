@@ -22,6 +22,8 @@
 
 .sapUiUx3NavBarItem {  /* Makes all header links white  */
 	color: white !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
 }
 
 #myShell-canvas {  /* make the background of all screens white */

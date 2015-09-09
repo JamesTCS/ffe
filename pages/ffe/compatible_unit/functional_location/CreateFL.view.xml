@@ -7,26 +7,26 @@
 			<l:HorizontalLayout class="float-right">
 				<c:Button text="Back" icon="/images/exit_small.png" press="back" class="right10"/>
 				<c:Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
-				<c:Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+				<c:Button text="Save &amp; Exit" press="saveAndExit" class="right10 orangeButton"/>
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
 				<!-- Column 1 -->
 				<l:VerticalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Functional Location: " width="130px" class="top10" ></c:Label>
+						<c:Label text ="Functional Location: " width="130px" class="top10 rLabel" ></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Description: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Description: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Plant Section: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Plant Section: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="ABC Indicator: " width="130px" class="top10"></c:Label>
+						<c:Label text ="ABC Indicator: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 				</l:VerticalLayout>
@@ -34,26 +34,26 @@
 				<Label text="" width="80px" />
 				<l:VerticalLayout class="left80">
 					<l:HorizontalLayout>
-						<c:Label text ="Category: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Category: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Room: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Room: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Location: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Location: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>
 					<l:HorizontalLayout>
-						<c:Label text ="Maintenance Plant: " width="130px" class="top10"></c:Label>
+						<c:Label text ="Maintenance Plant: " width="130px" class="top10 rLabel"></c:Label>
 						<c:TextField class="top10"></c:TextField>
 					</l:HorizontalLayout>				
 				</l:VerticalLayout>
 			</l:HorizontalLayout>
 			
 			
-			<c:Button text= "Select Structure List" class="top10" ></c:Button>	
+			<c:Button text= "Select Structure List" class="top10 blueButton" ></c:Button>	
 			
 			
 			<c:Label text = "Asset"></c:Label>

@@ -6,7 +6,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.functional_location.CreateF
 * @memberOf create_functional_location.create_functional_location
 */
 	onInit: function() {
-
+		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/functional_location/style.css","styleLink");
 	},
 	
 	back: function() {

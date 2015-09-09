@@ -15,7 +15,7 @@ sap.ui.core.UIComponent.extend("pge.ffe.Component", {
 		deseignType: "Standard",
 		worksetItems: [
 					   new sap.ui.ux3.NavigationItem("home",{key:"home",text:"Home"}),
-					   new sap.ui.ux3.NavigationItem("create",{key:"create",text:"FFE", subItems:[
+					   new sap.ui.ux3.NavigationItem("create",{key:"create",text:"Estimate Dashboard", subItems:[
 						  new sap.ui.ux3.NavigationItem("find",{key:"find",text:"Compatible Unit"}),
 						  new sap.ui.ux3.NavigationItem("design_dashboard",{key:"design_dashboard",text:"Design Dashboard"}),
 						  new sap.ui.ux3.NavigationItem("ade",{key:"ade",text:"Work Order"})]}),

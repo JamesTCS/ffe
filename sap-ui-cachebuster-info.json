@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "pages/ffe/compatible_unit/Change.view.xml": "1441830512000",
   "preview_hidden.html": "1441722797000",
   "README.md": "1441722798000",
@@ -55,4 +56,7 @@
   "pages/home/Home.view.xml": "1441745247000",
   "pages/ffe/compatible_unit/display_material/style.css": "1441827335000",
   "images/exit_small.png": "1441827335000"
+=======
+
+>>>>>>> branch 'master' of https://github.com/JamesTCS/ffe
 }

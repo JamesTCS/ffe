@@ -30,9 +30,9 @@
 			
 			<l:HorizontalLayout>
 				<Label text="Task List:" class="spacing " /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left5 top10" />
-				<Button text="Change" icon="/images/edit_small.png" class="left5 top10" press="" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left5 top10" press=""/>
+				<Button text="Create" icon="/images/new_small.png" class="left5 top10" press="toNewTaskList"/>
+				<Button text="Change" icon="/images/edit_small.png" class="left5 top10" press="toNewTaskList" /> 
+				<Button text="Display" icon="/images/view_small.png" class="left5 top10" press="toNewTaskList"/>
 			</l:HorizontalLayout>
 			<l:HorizontalLayout>
 				<Label text="Object Reference:" class="spacing " /><TextField class=" right10 top10" />
@@ -40,17 +40,17 @@
 			
 			<l:HorizontalLayout>
 				<Label text="Function Location:" class="spacing" /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left25 top10" />
-				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press=""/>
+				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toCreateFL" />
+				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toCreateFL" /> 
+				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toCreateFL"/>
 				<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
 				<Label text="Equipment:" class="spacing" /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left25 top10" />
-				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press=""/>
+				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toDisplayMaterial"/>
+				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toDisplayMaterial" /> 
+				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toDisplayMaterial"/>
 				<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>
 			</l:HorizontalLayout>
 		

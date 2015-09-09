@@ -166,12 +166,12 @@
 										<l:GridData span="L6 M4 S4"></l:GridData>
 									</commons:layoutData>
 								</commons:Label>
-								<commons:Button text="CU Classification" class="orangeButton">
+								<commons:Button text="CU Classification" class="orangeButton" press="toCreateClassification">
 									<commons:layoutData>
 										<l:GridData span="L2 M3 S3"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>	
-								<commons:Button text="Display Materials" class="orangeButton">
+								<commons:Button text="Display Materials" class="orangeButton" press="toDisplayMaterial">
 									<commons:layoutData>
 										<l:GridData span="L2 M3 S3"></l:GridData>
 									</commons:layoutData>

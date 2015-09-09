@@ -11,53 +11,53 @@
 	
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<m:Button text="Back"  press="back" class="right10"/>
-		<m:Button text="Save" icon="images/save.png" press="save" class="right10"/>
-		<m:Button text="Save &amp; Exit" press="saveAndExit" class="buttonStyle"/>
+		<Button text="Back"  press="back" class="right10"/>
+		<Button text="Save" icon="images/save_small.png" press="save" class="right10"/>
+		<Button text="Save &amp; Exit" press="saveAndExit" class="buttonStyle"/>
 	</l:HorizontalLayout>
 		<l:VerticalLayout class="top25">
 			<l:HorizontalLayout>
 				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
-				<m:Button icon="/images/struclist.png"  press="back" class="right10"/>
-				<Label text="Description" class="spacing left25" /><TextField class="right10 top10" />
+				<Button icon="/images/struclist_small.png"  press="back" class="right10 top10"/>
+				<Label text="Description:" class="spacing left25" /><TextField class="right10 top10" />
 				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
 				
 			</l:HorizontalLayout>
 			<l:HorizontalLayout>
 				<Label text="Base Unit:" class="spacing" /><TextField class="right10 top10" />
-				<Label text="Valid to:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label text="Valid to:" class="spacing left105" /><TextField class="right10 top10" />
 				<Label text="Valid From:" class="spacing left25" /><TextField class="right10 top10" />
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
-				<Label text="Task List:" class="spacing" /><TextField class="right10 top10" />
-				<m:Button text="Display" icon="/images/new.png" class="left25" />
-				<m:Button text="Change" icon="/images/edit.png" class="left10" press="" /> 
-				<m:Button text="Create" icon="/images/view.png" class="left10" press=""/>
+				<Label text="Task List:" class="spacing top25" /><TextField class="right10 top25" />
+				<Button text="Display" icon="/images/new_small.png" class="left5 top25" />
+				<Button text="Change" icon="/images/edit_small.png" class="left5 top25" press="" /> 
+				<Button text="Create" icon="/images/view_small.png" class="left5 top25" press=""/>
 			</l:HorizontalLayout>
 			<l:HorizontalLayout>
-				<Label text="Object Reference:" class="spacing" /><TextField class="left10 top10" />
+				<Label text="Object Reference:" class="top25 spacing " /><TextField class="left10 right10 top25" />
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
 				<Label text="Function Location:" class="spacing" /><TextField class="right10 top10" />
-				<m:Button text="Display" icon="/images/new.png" class="left25" />
-				<m:Button text="Change" icon="/images/edit.png" class="left10" press="" /> 
-				<m:Button text="Create" icon="/images/view.png" class="left10" press=""/>
+				<Button text="Display" icon="/images/new_small.png" class="left25" />
+				<Button text="Change" icon="/images/edit_small.png" class="left10" press="" /> 
+				<Button text="Create" icon="/images/view_small.png" class="left10" press=""/>
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
 				<Label text="Equipment:" class="spacing" /><TextField class="right10 top10" />
-				<m:Button text="Display" icon="/images/new.png" class="left25" />
-				<m:Button text="Change" icon="/images/edit.png" class="left10" press="" /> 
-				<m:Button text="Create" icon="/images/view.png" class="left10" press=""/>
+				<Button text="Display" icon="/images/new_small.png" class="left25" />
+				<Button text="Change" icon="/images/edit_small.png" class="left10" press="" /> 
+				<Button text="Create" icon="/images/view_small.png" class="left10" press=""/>
 			</l:HorizontalLayout>
 		<l:HorizontalLayout class="bottom10">
 		<Toolbar class="bottom10">
 			<Label text="Sub Items" class="spacing" />
 			<rightItems>
-				<m:Button  text="CU Clasification" />
-				<m:Button  text="Display Material" />
+				<Button  text="CU Clasification" />
+				<Button  text="Display Material" />
 			</rightItems>
 		</Toolbar>
 		</l:HorizontalLayout>
@@ -72,13 +72,11 @@
 
 		<!-- Table Buttons -->
 		<l:HorizontalLayout class="top10">
-			<m:Button text="Add Item"  />  
-			<m:Button text="Delete Item" class="left10" />
-			<m:Button text="Copy"  class="left25" />
-			<m:Button text="Lock"  class="left10" press="" /> 
-			<m:Button text="Planned/Actual Cost Comparision"  class="left10" press=""/>
+			<Button text="Add Item"  />  
+			<Button text="Delete Item" class="left10" />
+			<Button text="Copy"  class="left25" />
+			<Button text="Lock"  class="left10" press="" /> 
+			<Button text="Planned/Actual Cost Comparision"  class="left10" press=""/>
 		</l:HorizontalLayout>
 	</l:VerticalLayout>
 </core:View>
-
-	

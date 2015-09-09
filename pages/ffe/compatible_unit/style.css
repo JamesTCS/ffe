@@ -15,6 +15,10 @@
 	margin-right: 10px !important;
 }
 
+.right20{
+	margin-right: 20px !important;
+}
+
 .left25 {
 	margin-left: 25px !important;
 }
@@ -22,6 +26,14 @@
 .spacing { 
 	width: 100px !important;
 	margin-top: 10px !important;
+}
+
+.left105{
+	margin-left:105px !important;
+}
+.left5{
+	margin-left:5px !important
+	padding-left:5px !important;
 }
 
 /* Create Compatible Unit View */
@@ -62,6 +74,13 @@
 
 .sapMBtnContent.buttonStyle{
 	background-color:red !important;
+}
+
+.sapUiHLayoutChildWrapper{
+	padding-left:35px !important;
+}
+.sapUiHLayoutChildWrapper{
+	padding-top:25px !important;
 }
 /*.sapMBtnDefault.sapMBtnInner{
 	color:red !important;

@@ -11,8 +11,13 @@
 	
 	<html:h1 class="center">Task List   </html:h1>
 	<l:HorizontalLayout class="float-right">
+<<<<<<< HEAD
+		<Button text="Back" press="back" class="right10" />
+		<m:Button text="Save" icon="/images/save.png" press="save" class="right10"/>
+=======
 		<m:Button text="Save" icon="/images/save.png" press="save" class="right10"/>
 		<m:Button text="Back" icon="/images/exit.png" press="back" class="right10" />
+>>>>>>> branch 'master' of https://github.com/JamesTCS/ffe
 		<m:Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 	</l:HorizontalLayout>
 	
@@ -175,8 +180,8 @@
 			</t:Table>
 		<Toolbar>
 		<rightItems>
-			<Button id="displayId" type="Emphasized" text="Display" ></Button>
-			<Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></Button>
+			<m:Button id="displayId" type="Emphasized" text="Display" ></m:Button>
+			<m:Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></m:Button>
 		</rightItems>
 	</Toolbar>
 	

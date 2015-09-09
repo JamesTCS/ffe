@@ -35,6 +35,15 @@
 	background: #00c8f8 !important;
 	font-shadow: 0 0px 0 #ffffff !important;
 }
+.bottom10{
+	margin-bottom:20px !important;
+}
+
+
+.bottomButton{
+	margin-top: 5px !important;
+	margin-right: 10px !important;
+}
 
 .sapUiRespGridBreak{
 	padding-bottom: 15px !important;
@@ -50,3 +59,17 @@
 .float-right {
 	float: right;
 }
+
+.sapMBtnContent.buttonStyle{
+	background-color:red !important;
+}
+/*.sapMBtnDefault.sapMBtnInner{
+	color:red !important;
+}
+.buttonStyle.sapMBtn.sapMBtnBase{
+	color:red !important;
+}*/
+/*.sapUiTableHdr.tableHeaderStyle{
+	font-size:5px !important;
+	font-weight:normal !important;
+}*/

@@ -18,8 +18,8 @@
 		       <TextField id="cuInput2"></TextField>	
 			</items>
 			<rightItems>
-		       <Button id="savebtn" icon="/images/save" text="Save"></Button>
-		       <Button id="extbtn" icon="/images/exit" text="Exit" press="back" ></Button>
+		       <Button id="savebtn" icon="/images/save_small.png" text="Save"></Button>
+		       <Button id="extbtn" icon="/images/exit_small.png" text="Exit" press="back" ></Button>
 			   <Button id="sebtn"  text="Save and Exit"></Button>
 			</rightItems>
 	</Toolbar>

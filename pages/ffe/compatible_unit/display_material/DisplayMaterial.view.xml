@@ -4,21 +4,21 @@
     controllerName="pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial" >
 		<html:h1 class="center">Display Material</html:h1>
 		<l:HorizontalLayout class="float-right">
-			<Button text="Back" press="back" class="right10"/>
-			<Button text="Save" press="save" class="right10"/>
+			<Button text="Back" icon="/images/exit_small.png" press="back" class="right10"/>
+			<Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
 			<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
 		</l:HorizontalLayout>
 		<Toolbar></Toolbar>
 		<l:VerticalLayout>
 			<l:HorizontalLayout>
-				<Label text="Material Name: "></Label>
-				<TextField tooltip="Material Name"></TextField>
-				<Button text= "Search"></Button>
-				<Button text= "Edit"></Button>	
+				<Label text="Material Name: " width="100px" ></Label>
+				<TextField tooltip="Material Name" class="right10"></TextField>
+				<Button text= "Search" class="right10"></Button>
+				<Button text= "Edit" class="right10"></Button>	
 			</l:HorizontalLayout>
 			<l:HorizontalLayout>
-				<Label text="Material Number "></Label>
-				<TextField tooltip="Material Number"></TextField>
+				<Label text="Material Number: " width="100px" class="top10"></Label>
+				<TextField tooltip="Material Number" class="top10"></TextField>
 			</l:HorizontalLayout>
 
 		</l:VerticalLayout>

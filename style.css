@@ -1,5 +1,5 @@
 /* Shell CSS */
-.sapUiUx3NavBarItem{
+.sapUiUx3NavBarItem{  /* Increase Header list Items font size */
 	font-size:15pt!important;
 }
 
@@ -8,9 +8,24 @@
 
 }
 
-
-.sapUiUx3NavBar {
+.sapUiUx3NavBar {  /* Make the header Orange */
 	background-color: orange;
+}
+
+#myShell-facetBar-list { /* make just the sub header background black */
+	background-color: black !important;
+}
+
+#myShell-facetBar {  /* make just the sub header background black, yes both are needed */
+	background-color: black !important;
+}
+
+.sapUiUx3NavBarItem {  /* Makes all header links white  */
+	color: white !important;
+}
+
+#myShell-canvas {  /* make the background of all screens white */
+	background-color: white !important;
 }
 
 /* Global View CSS */

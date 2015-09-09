@@ -6,9 +6,9 @@
 	<Panel>
 	<html:h1 class="center">Compatible Unit - Create</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Save" tooltip="Save" press="save" class="right10 saveButton" icon="images/save.png"/>
-		<Button text="Back" tooltip="Back" press="back" class="right10 backButton" icon="images/exit.png"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
+		<commons:Button text="Save" tooltip="Save" press="save" class="right10 saveButton" icon="images/save_small.png"/>
+		<commons:Button text="Back" tooltip="Back" press="back" class="right10 backButton" icon="images/exit_small.png"/>
+		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
 	</l:HorizontalLayout>
 	
 	
@@ -79,17 +79,17 @@
 								</commons:TextField>
 								<commons:Button tooltip="Create Task List" text="Create" press="toCreateTaskList" icon="images/new_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 								<commons:Button tooltip="Change Task List" text="Change" icon="images/edit_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 								<commons:Button tooltip="Display Task List" text="Display" icon="images/view_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 							</form:fields>
@@ -139,22 +139,41 @@
 								</commons:TextField>
 								<commons:Button tooltip="Create Equipment" text="Create" press="toCreateEquipment" icon="images/new_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 								<commons:Button tooltip="Change Equipment" text="Change" icon="images/edit_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 								<commons:Button tooltip="Display Equipment" text="Display" icon="images/view_small.png">
 									<commons:layoutData>
-										<l:GridData span="L1 M1 S1"></l:GridData>
+										<l:GridData span="L1 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 								<commons:Button class="blueButton" text="Where Used">
 									<commons:layoutData>
 										<l:GridData span="L1 M2 S2"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement>
+							<form:fields>
+								<commons:Label>
+									<commons:layoutData>
+										<l:GridData span="L6 M4 S4"></l:GridData>
+									</commons:layoutData>
+								</commons:Label>
+								<commons:Button text="CU Classification" class="orangeButton">
+									<commons:layoutData>
+										<l:GridData span="L2 M3 S3"></l:GridData>
+									</commons:layoutData>
+								</commons:Button>	
+								<commons:Button text="Display Materials" class="orangeButton">
+									<commons:layoutData>
+										<l:GridData span="L2 M3 S3"></l:GridData>
 									</commons:layoutData>
 								</commons:Button>
 							</form:fields>
@@ -167,6 +186,15 @@
 			</form:layout>
 		</form:Form>
 		<table:Table>
+			<table:extension>
+				<l:HorizontalLayout>
+					<commons:Button class="blueButton tableButton" text="Add Item"/>
+					<commons:Button class="blueButton tableButton" text="Delete Item"/>
+					<commons:Button class="blueButton tableButton" text="Copy"/>
+					<commons:Button class="blueButton tableButton" text="Lock"/>
+					<commons:Button class="blueButton tableButton" text="Planned/Actual Cost Comparison"/>
+				</l:HorizontalLayout>
+			</table:extension>
 			<table:title>
 				<commons:TextView text="Sub-Items"></commons:TextView>
 			</table:title>
@@ -186,12 +214,7 @@
 			</table:columns>
 		</table:Table>
 		<l:HorizontalLayout>
-			<commons:Button class="blueButton bottomButton" text="Add Item"/>
-			<commons:Button class="blueButton bottomButton" text="Delete Item"/>
-			<commons:Button class="blueButton bottomButton" text="Copy"/>
-			<commons:Button class="blueButton bottomButton" text="Lock"/>
-			<commons:Button class="blueButton bottomButton" text="Planned/Actual Cost Comparison"/>
-		</l:HorizontalLayout>
+			</l:HorizontalLayout>
 	</Panel>
 	
 </core:View>

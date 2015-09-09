@@ -26,8 +26,8 @@
 
 /* Create Compatible Unit View */
 
-.orangeButton>.sapMBtnInner{
-	background: linear-gradient(to bottom, #ffb253,#ffb253) !important;
+.orangeButton{
+	background: #ffb253 !important;
 	font-shadow: 0 0px 0 #ffffff !important;
 }
 
@@ -40,8 +40,8 @@
 }
 
 
-.bottomButton{
-	margin-top: 5px !important;
+.tableButton{
+	margin-bottom: 5px !important;
 	margin-right: 10px !important;
 }
 

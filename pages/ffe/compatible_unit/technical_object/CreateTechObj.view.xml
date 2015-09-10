@@ -6,9 +6,9 @@
 	
 	<html:h1 class="center">Create Technical Object: Equipment</html:h1>
 	<l:HorizontalLayout class="float-right">
-		<Button text="Back" press="back" class="right10"/>
-		<Button text="Save" press="save" class="right10"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+		<commons:Button text="Save" press="save" icon="images/save_small.png" class="right10 saveButton"/>
+		<commons:Button text="Back" press="back" icon="images/exit_small.png" class="right10 backButton"/>
+		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
 	</l:HorizontalLayout>
 	
 	<Panel>

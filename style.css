@@ -42,6 +42,11 @@
 	font-shadow: 0 0px 0 #ffffff !important;
 }
 
+.rLabel{ /* right align labels for text fields */
+	text-align: right !important;
+	margin-right: 5px !important;
+}
+
 .float-right {
 	float: right;
 }

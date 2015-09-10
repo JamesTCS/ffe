@@ -32,6 +32,21 @@
 
 /* Global View CSS */
 
+.orangeButton{
+	background: #ffb253 !important;
+	font-shadow: 0 0px 0 #ffffff !important;
+}
+
+.blueButton{
+	background: #00c8f8 !important;
+	font-shadow: 0 0px 0 #ffffff !important;
+}
+
+.rLabel{ /* right align labels for text fields */
+	text-align: right !important;
+	margin-right: 5px !important;
+}
+
 .float-right {
 	float: right;
 }

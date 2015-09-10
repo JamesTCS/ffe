@@ -11,5 +11,15 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.Change", {
     toNewTaskList: function() {
     	console.log("here");
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.task_list.Create"}), true);
+    },
+    
+   toCreateFL: function() {
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.functional_location.CreateFL"}), true);
+    },
+    
+     toDisplayMaterial: function() {
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial"}), true);
     }
 });

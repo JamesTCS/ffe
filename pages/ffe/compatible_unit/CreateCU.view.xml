@@ -3,12 +3,13 @@
 	xmlns:form="sap.ui.layout.form" xmlns:commons="sap.ui.commons"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.CreateCU">
-	<Panel>
+	
 	<html:h1 class="center">Compatible Unit - Create</html:h1>
+	<Panel>
 	<l:HorizontalLayout class="float-right">
-		<commons:Button text="Save" tooltip="Save" press="save" class="right10 saveButton" icon="images/save_small.png"/>
-		<commons:Button text="Back" tooltip="Back" press="back" class="right10 backButton" icon="images/exit_small.png"/>
-		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
+		<commons:Button text="Save" tooltip="Save" press="save" class="saveButton right10" icon="images/save_small.png"/>
+		<commons:Button text="Back" tooltip="Back" press="back" class="backButton right10" icon="images/exit_small.png"/>
+		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="saveExitButton right10 orangeButton"/>
 	</l:HorizontalLayout>
 	
 	
@@ -23,7 +24,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label text="Description" style="text-align:right">
+								<commons:Label text="Description:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
@@ -33,7 +34,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label text="Status" style="text-align:right">
+								<commons:Label text="Status:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
@@ -52,14 +53,14 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label text="Valid From: " style="text-align:right">
+								<commons:Label text="Valid From:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:Label>
 								<commons:DatePicker>
 								</commons:DatePicker>
-								<commons:Label text="Valid To: " style="text-align:right">
+								<commons:Label text="Valid To:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>

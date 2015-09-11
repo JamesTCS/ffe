@@ -214,7 +214,7 @@
 		</form:Form>
 		<table:Table class="bgBeige">
 			<table:extension>
-				<l:HorizontalLayout class="noVPadHLay">
+				<l:HorizontalLayout>
 					<commons:Button class="blueButton tableButton" text="Add Item"/>
 					<commons:Button class="blueButton tableButton" text="Delete Item"/>
 					<commons:Button class="blueButton tableButton" text="Copy"/>

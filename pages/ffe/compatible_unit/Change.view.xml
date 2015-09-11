@@ -16,12 +16,14 @@
 		<Button text="Save &amp; Exit" press="saveAndExit" class="orangeButton"/>
 	</l:HorizontalLayout>
 		<l:VerticalLayout class="top25">
+		<html:div class="bgBlue">
 			<l:HorizontalLayout>
 				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
 				<Button icon="/images/struclist_small.png"  press="back" class="right10 top10"/>
 				<Label text="Description:" class="spacing left25" /><TextField class="right10 top10" />
 				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
 			</l:HorizontalLayout>
+		
 			<l:HorizontalLayout>
 				<Label text="Base Unit:" class="spacing" /><TextField class="right10 top10" />
 				<Label text="Valid to:" class="spacing left105" /><TextField class="right10 top10" />
@@ -29,11 +31,13 @@
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
-				<Label text="Task List:" class="spacing " /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left5 top10" press="toNewTaskList"/>
-				<Button text="Change" icon="/images/edit_small.png" class="left5 top10" press="toNewTaskList" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left5 top10" press="toNewTaskList"/>
+				<Label text="Task List:" class="spacing " /><TextField class="right10 top10 bottom10" />
+				<Button text="Create" icon="/images/new_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
+				<Button text="Change" icon="/images/edit_small.png" class="left5 top10 bottom10" press="toNewTaskList" /> 
+				<Button text="Display" icon="/images/view_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
 			</l:HorizontalLayout>
+			</html:div>
+			<html:div class="bgBeige">
 			<l:HorizontalLayout>
 				<Label text="Object Reference:" class="spacing " /><TextField class=" right10 top10" />
 			</l:HorizontalLayout>
@@ -46,15 +50,16 @@
 				<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>
 			</l:HorizontalLayout>
 			
-			<l:HorizontalLayout>
+			<l:HorizontalLayout class="bottom10">
 				<Label text="Equipment:" class="spacing" /><TextField class="right10 top10" />
 				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toDisplayMaterial"/>
 				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toDisplayMaterial" /> 
 				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toDisplayMaterial"/>
 				<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>
 			</l:HorizontalLayout>
-		
+	        </html:div>
 			<!-- SubItems Table -->
+		<html:div class="bgBlue">
 		<l:HorizontalLayout class="float-right">
 			<Button  text="CU Clasification"  class="orangeButton"/>
 			<Button  text="Display Material"  class="orangeButton"/>
@@ -82,5 +87,6 @@
 			<Button text="Lock"  class="left10 blueButton" press="" /> 
 			<Button text="Planned/Actual Cost Comparision"  class="left10 blueButton" press=""/>
 		</l:HorizontalLayout>
+		</html:div>
 	</l:VerticalLayout>
 </core:View>

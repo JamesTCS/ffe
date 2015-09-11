@@ -8,24 +8,22 @@
 	xmlns:f="sap.ui.layout.form"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	controllerName="pge.ffe.pages.ffe.compatible_unit.classification.Create" >
-<!--	<m:HBox class= "centerText">
+	<m:HBox class= "centerText">
 	<TextView id="titleId" class="pageTitle" text="CU Classification"></TextView> 
-	</m:HBox>-->
-	<html:h1 class="center">Change Compatible Unit</html:h1>
-	<Toolbar class="tableTBar">
+	</m:HBox>
+	<Toolbar>
 			<items>
 			   <TextView id="cuId" text="Compatible Unit"></TextView> 
 		       <TextField id="cuInput1"></TextField>
 		       <TextField id="cuInput2"></TextField>	
 			</items>
-			<rightItems class="tableTBar">
+			<rightItems>
 		       <Button id="savebtn" icon="/images/save_small.png" text="Save"></Button>
 		       <Button id="extbtn" icon="/images/exit_small.png" text="Exit" press="back" ></Button>
 			   <Button id="sebtn"  text="Save and Exit"></Button>
 			</rightItems>
 	</Toolbar>
 		<!--Assignments Table -->
-		<html:div class="bgBlue">
 			<t:Table id="assignmentsTable" 
 				growing="true" growingScrollToLoad="true" title="Assignments" class="tableStyle">
 		       
@@ -49,9 +47,7 @@
 						
 					</t:rows>
 			</t:Table>
-		</html:div>
 			<!--Characteristic Values Table -->
-			<html:div class="bgBeige">
 			<t:Table id="charValTable" 
 				growing="true" growingScrollToLoad="true" title="Characteristic Values" class="tableStyle">
 		       
@@ -71,5 +67,29 @@
 						
 					</t:rows>
 			</t:Table>
-		</html:div>
+			<!-- this view styling -->
+				<!--.pageTitle{
+					padding-top:20px ;
+					padding-bottom:20px ;
+					font-size:14px ;
+					font-weight:bold;
+					text-align:center;
+				}
+				
+				.sapMFlexItem{
+					margin-left: auto !important;
+				    margin-right: auto !important;
+				}
+				
+				.tableStyle{
+					padding-top:20px !important;
+					padding-bottom:10px !important;
+					padding-left:20px !important;
+					padding-right:20px !important;
+				}
+				.sapUiTbInner{
+						padding-left:20px !important;
+					    padding-right:20px !important;
+				}-->
+	
 </core:View>

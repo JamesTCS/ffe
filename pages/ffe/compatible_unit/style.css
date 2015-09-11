@@ -1,8 +1,4 @@
 /* Compatible Unit Home */
-.noVPadHLay>.sapUiHLayoutChildWrapper{
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-}
 
 .top25 {
 	margin-top: 25px !important;

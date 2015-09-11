@@ -58,7 +58,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 				<TextView text="Compatible Units"></TextView>
 			</t:title>
 			<t:extension>
-				<l:HorizontalLayout>
+				<l:HorizontalLayout class="noVPadHLay">
 					<Button text="Display" icon="/images/view_small.png"/>
 					<Button text="Change" icon="/images/edit_small.png" class="left10" press="toChange" /> 
 					<Button text="Create" icon="/images/new_small.png" class="left10" press="toCreate"/>

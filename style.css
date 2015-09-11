@@ -32,6 +32,7 @@
 
 /* Global View CSS */
 
+/* Ugly, redacted
 .orangeButton{
 	background: #ffb253 !important;
 	font-shadow: 0 0px 0 #ffffff !important;
@@ -40,6 +41,14 @@
 .blueButton{
 	background: #00c8f8 !important;
 	font-shadow: 0 0px 0 #ffffff !important;
+}*/
+
+.bgBlue{
+	background-color: lightblue !important;
+}
+
+.bgBeige{
+	background-color: beige !important;
 }
 
 .rLabel{ /* right align labels for text fields */

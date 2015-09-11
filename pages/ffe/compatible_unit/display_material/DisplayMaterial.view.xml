@@ -3,10 +3,11 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     controllerName="pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial" >
 		<html:h1 class="center">Display Material</html:h1>
-		<l:HorizontalLayout class="float-right">
-			<Button text="Back" icon="/images/exit_small.png" press="back" class="right10"/>
-			<Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
-			<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+		<html:div class="bgBlue">
+		<l:HorizontalLayout class="float-right savePane">
+			<Button text="Save" icon="/images/save_small.png" press="save"/>
+			<Button text="Back" icon="/images/exit_small.png" press="back"/>
+			<Button text="Save &amp; Exit" press="saveAndExit"/>
 		</l:HorizontalLayout>
 		<Toolbar></Toolbar>
 		<l:VerticalLayout>
@@ -23,7 +24,8 @@
 
 		</l:VerticalLayout>
 		<Toolbar></Toolbar>
-		<t:Table>
+		</html:div>
+		<t:Table class="bgBeige">
 		</t:Table>
 
 		<Toolbar>

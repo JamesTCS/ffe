@@ -21,5 +21,10 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.Change", {
      toDisplayMaterial: function() {
     	console.log("here");
     	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.display_material.DisplayMaterial"}), true);
+    },
+    
+    toCreateClassification: function() {
+    	console.log("here");
+    	this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"taskList", viewName:"pge.ffe.pages.ffe.compatible_unit.classification.Create"}), true);
     }
 });

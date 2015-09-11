@@ -61,8 +61,8 @@
 			<!-- SubItems Table -->
 		<html:div class="bgBlue">
 		<l:HorizontalLayout class="float-right">
-			<Button  text="CU Clasification"  class="orangeButton"/>
-			<Button  text="Display Material"  class="orangeButton"/>
+			<Button  text="CU Clasification"  class="orangeButton" press="toCreateClassification"/>
+			<Button  text="Display Material"  class="orangeButton" press="toDisplayMaterial"/>
 		</l:HorizontalLayout>
 		<t:Table class="top25" >
 		<t:extension>

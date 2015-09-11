@@ -7,11 +7,12 @@ xmlns:html="http://www.w3.org/1999/xhtml"
 controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 	
 	<html:h1 class="center" >Compatible Unit</html:h1>
-	<l:VerticalLayout class="bgBlue" width="100%">
+	<l:VerticalLayout class="bgBlue pBottom10" width="100%">
 		<l:HorizontalLayout>
 			<Label text="Select Area:" class="left10" /> 
 			<DropdownBox class="left10">
 				<items>
+					<core:ListItem text="All" />
 					<core:ListItem text="Gas" />
 					<core:ListItem text="Electric" />
 					<core:ListItem text="Trench" />
@@ -52,7 +53,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<core:Icon src="/images/edit.png" class="left10" press="toChange" />
 			<core:Icon src="/image-->
 		
-		<t:Table>
+		<t:Table id="CUTable">
 			<t:title>
 				<TextView text="Compatible Units"></TextView>
 			</t:title>
@@ -62,13 +63,10 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 					<Button text="Change" icon="/images/edit_small.png" class="left10" press="toChange" /> 
 					<Button text="Create" icon="/images/new_small.png" class="left10" press="toCreate"/>
 					<Button text="Search" icon="/images/search_small.png" class="left10"/>
-					<Button text="Reset" icon="images/exit_small" class="left10" />
+					<Button text="Reset" icon="images/exit_small.png" class="left10" />
 				</l:HorizontalLayout>
 			</t:extension>
-			<t:columns>
-				<t:Column name="test"><t:label><Label text="col1"/></t:label></t:Column>
-				<t:Column name="test"></t:Column>
-			</t:columns>
+			
 		</t:Table>
 		</html:div>
 

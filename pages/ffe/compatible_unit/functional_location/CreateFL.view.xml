@@ -4,12 +4,12 @@
 		<l:VerticalLayout>
 		
 			<html:h1 class="center">Create Functional Location</html:h1>
-			<l:HorizontalLayout class="float-right">
-				<c:Button text="Back" icon="/images/exit_small.png" press="back" class="right10"/>
-				<c:Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
-				<c:Button text="Save &amp; Exit" press="saveAndExit" class="right10 orangeButton"/>
+			<l:HorizontalLayout class="float-right savePane">
+				<c:Button text="Save" icon="/images/save_small.png" press="save"/>
+				<c:Button text="Back" icon="/images/exit_small.png" press="back"/>
+				<c:Button text="Save &amp; Exit" press="saveAndExit" class="orangeButton"/>
 			</l:HorizontalLayout>
-			
+			<html:div class="bgBlue pBottom10">
 			<l:HorizontalLayout>
 				<!-- Column 1 -->
 				<l:VerticalLayout>
@@ -54,10 +54,11 @@
 			
 			
 			<c:Button text= "Select Structure List" class="top10 blueButton" ></c:Button>	
-			
-			
-			<c:Label text = "Asset"></c:Label>
-			<t:Table>
+			</html:div>
+			<t:Table class="bgBeige">
+				<t:title>
+					<c:TextView text="Asset"></c:TextView>
+				</t:title>
 				<t:Column>
 				</t:Column>
 				<t:Column>

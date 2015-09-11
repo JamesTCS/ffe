@@ -1,0 +1,40 @@
+{
+	"rows" : [ 
+		{
+		 "CUID":"SW-U-600-RAM-20",
+		 "DESC":"SW UG SF6 SUB BYPASS 4-WAY 600A 27KV",
+		 "STATUS":"CUCR",
+		 "CATEGORY":"Trench"
+		},
+		{
+		 "CUID":"SWRK-D-ULT-16KV-TP",
+		 "DESC":"SWRK 15 DBL BUS TR BNK POS ULT 12/16KV",
+		 "STATUS":"CUCR",
+		 "CATEGORY":"Trench"
+		},
+		{
+		 "CUID":"SL-CEL-30-U-CNC-7",
+		 "DESC":"SL CELL 30' ELECT CONC 2-6' BKT W/3 ANT+",
+		 "STATUS":"CUCR CUVL",
+		 "CATEGORY":"Electric"
+		},
+		{
+		 "CUID":"CRL-PMCR-BGAN-0-3",
+		 "DESC":"CRL PMCR BGAN OH SAT TRIM SEC RCK CMP POL ",
+		 "STATUS":"CUCR",
+		 "CATEGORY":"Electric"
+		},
+		{
+		 "CUID":"MISC-U-VOLTEK-1",
+		 "DESC":"MISC UG VOLTEK VAULT RETROFIT",
+		 "STATUS":"CUCR",
+		 "CATEGORY":"Gas"
+		},
+		{
+		 "CUID":"T-O-100-34-4",
+		 "DESC":"TR OH 100 KVA 34KV 12.47KV 1P",
+		 "STATUS":"CUCR",
+		 "CATEGORY":"Gas"
+		}
+	]
+} 

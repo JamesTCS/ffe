@@ -6,14 +6,14 @@
 	
 	<html:h1 class="center">Compatible Unit - Create</html:h1>
 	<Panel>
-	<l:HorizontalLayout class="float-right">
-		<commons:Button text="Save" tooltip="Save" press="save" class="saveButton right10" icon="images/save_small.png"/>
-		<commons:Button text="Back" tooltip="Back" press="back" class="backButton right10" icon="images/exit_small.png"/>
-		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="saveExitButton right10 orangeButton"/>
+	<l:HorizontalLayout class="float-right savePane">
+		<commons:Button text="Save" tooltip="Save" press="save" class="saveButton right5 left5" icon="images/save_small.png"/>
+		<commons:Button text="Back" tooltip="Back" press="back" class="backButton right5 left5" icon="images/exit_small.png"/>
+		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="saveExitButton right5 left5 orangeButton"/>
 	</l:HorizontalLayout>
 	
 	
-		<form:Form>
+		<form:Form class="bgBlue">
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
@@ -46,7 +46,7 @@
 								</commons:TextField>
 							</form:fields>
 						</form:FormElement>
-						<form:FormElement label="Base Unit">
+						<form:FormElement label="Base Unit" class="formBreak">
 							<form:fields>
 								<commons:TextField>
 									<commons:layoutData>
@@ -71,6 +71,17 @@
 								</commons:Label>
 							</form:fields>
 						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:layout>
+				<form:ResponsiveGridLayout columnsL="1"/>
+			</form:layout>
+		</form:Form>
+		<form:Form class="bgBeige">
+			<form:formContainers>
+				<form:FormContainer>
+					<form:formElements>
 						<form:FormElement label="Task List">
 							<form:fields>
 								<commons:TextField>
@@ -102,6 +113,17 @@
 								</commons:layoutData>
 							</commons:TextField>
 						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:layout>
+				<form:ResponsiveGridLayout columnsL="1"/>
+			</form:layout>
+		</form:Form>
+		<form:Form class="bgBlue">
+			<form:formContainers>
+				<form:FormContainer>
+					<form:formElements>
 						<form:FormElement label="Function Location">
 							<form:fields>
 								<commons:TextField>
@@ -183,10 +205,10 @@
 				</form:FormContainer>
 			</form:formContainers>
 			<form:layout>
-				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
+				<form:ResponsiveGridLayout columnsL="1"/>
 			</form:layout>
 		</form:Form>
-		<table:Table>
+		<table:Table class="bgBeige">
 			<table:extension>
 				<l:HorizontalLayout>
 					<commons:Button class="blueButton tableButton" text="Add Item"/>
@@ -214,8 +236,6 @@
 				</table:Column>
 			</table:columns>
 		</table:Table>
-		<l:HorizontalLayout>
-			</l:HorizontalLayout>
 	</Panel>
 	
 </core:View>

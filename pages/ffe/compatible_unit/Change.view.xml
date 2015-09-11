@@ -1,93 +1,83 @@
-<core:View xmlns:core="sap.ui.core" 
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.ui.commons" 
-	xmlns:m= "sap.m"
-	xmlns:ui="sap.ca.ui"
-	xmlns:l="sap.ui.layout"
-	xmlns:t="sap.ui.table"
-	xmlns:f="sap.ui.layout.form"
-	controllerName="pge.ffe.pages.ffe.compatible_unit.Change" 
-	xmlns:html="http://www.w3.org/1999/xhtml">
-	
+<core:View controllerName="pge.ffe.pages.ffe.compatible_unit.Change" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table"
+	xmlns:ui="sap.ca.ui" xmlns="sap.ui.commons">
 	<html:h1 class="center">Change Compatible Unit</html:h1>
 	<l:HorizontalLayout class="float-right savePane">
-		<Button text="Back"  press="back" class="right10"/>
-		<Button text="Save" icon="images/save_small.png" press="save" class="right10"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="orangeButton"/>
+		<Button class="right10" icon="images/save_small.png" press="save" text="Save"/>
+		<Button class="right10" icon="images/exit_small.png" press="back" text="Back"/>
+		<Button class="orangeButton" press="saveAndExit" text="Save &amp; Exit"/>
 	</l:HorizontalLayout>
-		<l:VerticalLayout class="top25">
+	<l:VerticalLayout class="top25">
 		<html:div class="bgBlue">
 			<l:HorizontalLayout>
-				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
-				<Button icon="/images/struclist_small.png"  press="back" class="right10 top10"/>
-				<Label text="Description:" class="spacing left25" /><TextField class="right10 top10" />
-				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label class="spacing" text="CU ID:"/><TextField class="right10 top10"/>
+				<Button class="right10 top10" icon="/images/struclist_small.png" press="back"/>
+				<Label class="spacing left25" text="Description:"/><TextField class="right10 top10"/>
+				<Label class="spacing left25" text="Status:"/><TextField class="right10 top10"/>
 			</l:HorizontalLayout>
-		
 			<l:HorizontalLayout>
-				<Label text="Base Unit:" class="spacing" /><TextField class="right10 top10" />
-				<Label text="Valid to:" class="spacing left105" /><TextField class="right10 top10" />
-				<Label text="Valid From:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label class="spacing" text="Base Unit:"/><TextField class="right10 top10"/>
+				<Label class="spacing left105" text="Valid to:"/><TextField class="right10 top10"/>
+				<Label class="spacing left25" text="Valid From:"/><TextField class="right10 top10"/>
 			</l:HorizontalLayout>
-			
 			<l:HorizontalLayout>
-				<Label text="Task List:" class="spacing " /><TextField class="right10 top10 bottom10" />
-				<Button text="Create" icon="/images/new_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
-				<Button text="Change" icon="/images/edit_small.png" class="left5 top10 bottom10" press="toNewTaskList" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
+				<Label class="spacing " text="Task List:"/><TextField class="right10 top10 bottom10"/>
+				<Button class="left5 top10 bottom10" icon="/images/new_small.png" press="toNewTaskList" text="Create"/>
+				<Button class="left5 top10 bottom10" icon="/images/edit_small.png" press="toNewTaskList" text="Change"/>
+				<Button class="left5 top10 bottom10" icon="/images/view_small.png" press="toNewTaskList" text="Display"/>
 			</l:HorizontalLayout>
-			</html:div>
-			<html:div class="bgBeige">
+		</html:div>
+		<html:div class="bgBeige">
 			<l:HorizontalLayout>
-				<Label text="Object Reference:" class="spacing " /><TextField class=" right10 top10" />
+				<Label class="spacing " text="Object Reference:"/><TextField class=" right10 top10"/>
 			</l:HorizontalLayout>
-			
 			<l:HorizontalLayout>
-				<Label text="Function Location:" class="spacing" /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toCreateFL" />
-				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toCreateFL" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toCreateFL"/>
-			<!--<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>-->
-			</l:HorizontalLayout>
-			
-			<l:HorizontalLayout class="bottom10">
-				<Label text="Equipment:" class="spacing" /><TextField class="right10 top10" />
-				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toDisplayMaterial"/>
-				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toDisplayMaterial" /> 
-				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toDisplayMaterial"/>
+				<Label class="spacing" text="Function Location:"/><TextField class="right10 top10"/>
+				<Button class="left25 top10" icon="/images/new_small.png" press="toCreateFL" text="Create"/>
+				<Button class="left10 top10" icon="/images/edit_small.png" press="toCreateFL" text="Change"/>
+				<Button class="left10 top10" icon="/images/view_small.png" press="toCreateFL" text="Display"/>
 				<!--<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>-->
 			</l:HorizontalLayout>
-	        </html:div>
-			<!-- SubItems Table -->
-		    <l:HorizontalLayout class="float-right">
-				<Button  text="CU Clasification" press="toCreateClassification" class="buttonOrange"/>
-				<Button  text="Display Material" press="toDisplayMaterial"/>
-		    </l:HorizontalLayout>
+			<l:HorizontalLayout class="bottom10">
+				<Label class="spacing" text="Equipment:"/><TextField class="right10 top10"/>
+				<Button class="left25 top10" icon="/images/new_small.png" press="toDisplayMaterial" text="Create"/>
+				<Button class="left10 top10" icon="/images/edit_small.png" press="toDisplayMaterial" text="Change"/>
+				<Button class="left10 top10" icon="/images/view_small.png" press="toDisplayMaterial" text="Display"/>
+				<!--<Button text="Where Used" icon="/images/view_small.png" class="left10 top10 blueButton" press=""/>-->
+			</l:HorizontalLayout>
+			<l:HorizontalLayout class="bottom10 float-right">
+				<Button class="buttonOrange" press="toCreateClassification" text="CU Clasification"/>
+				<Button press="toDisplayMaterial" text="Display Material"/>
+			</l:HorizontalLayout>
+		</html:div>
+		<!-- SubItems Table -->
 		<html:div class="bgBlue">
-		
-		<t:Table class="top25" >
-		<t:extension>
-		
-		</t:extension>
-		<t:title>
-		<Label text="Sub Items" class="spacing" />
-		</t:title>
-
-			<t:columns>
-				<t:Column name="#"><t:label><Label text="#"/></t:label></t:Column>
-				<t:Column name="cu"><t:label><Label text="CU"/></t:label></t:Column>
-				<t:Column name="Description"><t:label><Label text="CU"/></t:label></t:Column>
-			</t:columns>
-		</t:Table>
-
-		<!-- Table Buttons -->
-		<l:HorizontalLayout class="top10">
-			<Button text="Add Item" class="blueButton" />  
-			<Button text="Delete Item" class="left10 blueButton" />
-			<Button text="Copy"  class="left10 blueButton" />
-			<Button text="Lock"  class="left10 blueButton" press="" /> 
-			<Button text="Planned/Actual Cost Comparision"  class="left10 blueButton" press=""/>
-		</l:HorizontalLayout>
+			<t:Table>
+				<t:extension>
+					<l:HorizontalLayout class="noVPadHLay">
+						<Button class="blueButton tableButton" text="Add Item"/>
+						<Button class=" tableButton blueButton" text="Delete Item"/>
+						<Button class=" tableButton blueButton" text="Copy"/>
+						<Button class=" tableButton blueButton" press="" text="Lock"/>
+						<Button class=" tableButton blueButton" press="" text="Planned/Actual Cost Comparision"/>
+					</l:HorizontalLayout>
+				</t:extension>
+				<t:title>
+					<Label class="spacing" text="Sub Items"/>
+				</t:title>
+				<t:columns>
+					<t:Column name="#">
+						<t:label><Label text="#"/></t:label>
+					</t:Column>
+					<t:Column name="cu">
+						<t:label><Label text="CU"/></t:label>
+					</t:Column>
+					<t:Column name="Description">
+						<t:label><Label text="CU"/></t:label>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+			<!-- Table Buttons -->
 		</html:div>
 	</l:VerticalLayout>
 </core:View>

@@ -9,7 +9,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 	<html:h1 class="center" >Compatible Unit</html:h1>
 	<l:VerticalLayout class="bgBlue pBottom10" width="100%">
 		<l:HorizontalLayout>
-			<Label text="Select Area:" class="left10" /> 
+			<Label text="Select Area:" class="spacing" /> 
 			<DropdownBox class="left10">
 				<items>
 					<core:ListItem text="All" />
@@ -22,12 +22,12 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 		</l:HorizontalLayout>
 		
 		<l:VerticalLayout class="top25">
-			<l:HorizontalLayout>
+			<l:HorizontalLayout class="noVPadHLay">
 				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
 				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
 				<Label text="Valid To:" class="spacing left25" /><TextField class="right10 top10" />
 			</l:HorizontalLayout>
-			<l:HorizontalLayout>
+			<l:HorizontalLayout class="noVPadHLay">
 				<Label text="Created BY:" class="spacing" /><TextField class="right10 top10" />
 				<Label text="Task List Group:" class="spacing left25" /><TextField class="right10 top10" />
 				<Label text="Valid From:" class="spacing left25" /><TextField class="right10 top10" />

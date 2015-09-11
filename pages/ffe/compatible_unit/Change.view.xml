@@ -18,20 +18,20 @@
 		<l:VerticalLayout class="top25">
 		<html:div class="bgBlue">
 			<l:HorizontalLayout>
-				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" />
+				<Label text="CU ID:" class="spacing" /><TextField class="right10 top10" value="SW-U-600-RAM-20" />
 				<Button icon="/images/struclist_small.png"  press="back" class="right10 top10"/>
-				<Label text="Description:" class="spacing left25" /><TextField class="right10 top10" />
-				<Label text="Status:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label text="Description:" class="spacing left25" /><TextField value="SW UG SF6 SUB BYPASS 4-WAY 600A 27KV" class="right10 top10" />
+				<Label text="Status:" class="spacing left25" /><TextField value="CUCR" class="right10 top10" />
 			</l:HorizontalLayout>
 		
 			<l:HorizontalLayout>
-				<Label text="Base Unit:" class="spacing" /><TextField class="right10 top10" />
-				<Label text="Valid to:" class="spacing left105" /><TextField class="right10 top10" />
-				<Label text="Valid From:" class="spacing left25" /><TextField class="right10 top10" />
+				<Label text="Base Unit:" class="spacing" /><TextField value="EA" class="right10 top10" />
+				<Label text="Valid to:" class="spacing left105" /><TextField value="31129999" class="right10 top10" />
+				<Label text="Valid From:" class="spacing left25" /><TextField value="09092015" class="right10 top10" />
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
-				<Label text="Task List:" class="spacing " /><TextField class="right10 top10 bottom10" />
+				<Label text="Task List:" class="spacing " /><TextField value="CUT00002" class="right10 top10 bottom10" />
 				<Button text="Create" icon="/images/new_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
 				<Button text="Change" icon="/images/edit_small.png" class="left5 top10 bottom10" press="toNewTaskList" /> 
 				<Button text="Display" icon="/images/view_small.png" class="left5 top10 bottom10" press="toNewTaskList"/>
@@ -39,7 +39,7 @@
 			</html:div>
 			<html:div class="bgBeige">
 			<l:HorizontalLayout>
-				<Label text="Object Reference:" class="spacing " /><TextField class=" right10 top10" />
+				<Label text="Object Reference:" class="spacing " /><TextField value="02" class=" right10 top10" />
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout>
@@ -51,7 +51,7 @@
 			</l:HorizontalLayout>
 			
 			<l:HorizontalLayout class="bottom10">
-				<Label text="Equipment:" class="spacing" /><TextField class="right10 top10" />
+				<Label text="Equipment:" class="spacing" /><TextField value="CUREF-000000000001" class="right10 top10" />
 				<Button text="Create" icon="/images/new_small.png" class="left25 top10" press="toDisplayMaterial"/>
 				<Button text="Change" icon="/images/edit_small.png" class="left10 top10" press="toDisplayMaterial" /> 
 				<Button text="Display" icon="/images/view_small.png" class="left10 top10" press="toDisplayMaterial"/>
@@ -65,19 +65,20 @@
 		    </l:HorizontalLayout>
 		<html:div class="bgBlue">
 		
-		<t:Table class="top25" >
+		<t:Table id="subItemsTable" class="top25" >
 		<t:extension>
 		
 		</t:extension>
 		<t:title>
 		<Label text="Sub Items" class="spacing" />
 		</t:title>
-
+			<!--
 			<t:columns>
 				<t:Column name="#"><t:label><Label text="#"/></t:label></t:Column>
 				<t:Column name="cu"><t:label><Label text="CU"/></t:label></t:Column>
 				<t:Column name="Description"><t:label><Label text="CU"/></t:label></t:Column>
 			</t:columns>
+			-->
 		</t:Table>
 
 		<!-- Table Buttons -->

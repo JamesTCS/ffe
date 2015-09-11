@@ -7,7 +7,33 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.CompatibleUnit", {
 		onInit: function() {
 			jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/style.css","styleLink");
 			
+			var CUModel = new sap.ui.model.json.JSONModel("/pages/ffe/compatible_unit/CUData.json");
+			var oTable = this.byId("CUTable");
+			oTable.setModel(CUModel);
+			oTable.bindRows("/rows");
+			
+			oTable.addColumn(new sap.ui.table.Column({
+			    label: new sap.ui.commons.Label({text: "CU ID"}), 
+			    template: new sap.ui.commons.TextView({text:"{CUID}"})
+			}));
+			
+			oTable.addColumn(new sap.ui.table.Column({
+			    label: new sap.ui.commons.Label({text: "Description"}), 
+			    template: new sap.ui.commons.TextView({text:"{DESC}"})
+			}));
+			
+			oTable.addColumn(new sap.ui.table.Column({
+			    label: new sap.ui.commons.Label({text: "Status"}), 
+			    template: new sap.ui.commons.TextView({text:"{STATUS}"})
+			}));
+			
+			oTable.addColumn(new sap.ui.table.Column({
+			    label: new sap.ui.commons.Label({text: "Category"}), 
+			    template: new sap.ui.commons.TextView({text:"{CATEGORY}"})
+			}));
+			
 		},
+		
 		
 		toCreate: function() {
 			this.getView().getParent().setContent(new sap.ui.core.mvc.XMLView({id:"createCU", viewName:"pge.ffe.pages.ffe.compatible_unit.CreateCU"}), true);                         

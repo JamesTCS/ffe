@@ -7,7 +7,7 @@ xmlns:html="http://www.w3.org/1999/xhtml"
 controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 	
 	<html:h1 class="center" >Compatible Unit</html:h1>
-	<l:VerticalLayout class="bgBlue" width="100%">
+	<l:VerticalLayout class="bgBlue pBottom10" width="100%">
 		<l:HorizontalLayout>
 			<Label text="Select Area:" class="left10" /> 
 			<DropdownBox class="left10">

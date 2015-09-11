@@ -48,11 +48,15 @@
 						</form:FormElement>
 						<form:FormElement label="Base Unit" class="formBreak">
 							<form:fields>
-								<commons:TextField>
+								<commons:DropdownBox tooltip="Base Unit" selectedItemId="bu1" value="EA">
+									<commons:items>
+										<core:ListItem id="bu1" text="EA"/> 
+										<core:ListItem id="bu2" text="CS"/>
+									</commons:items>
 									<commons:layoutData>
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
-								</commons:TextField>
+								</commons:DropdownBox>
 								<commons:Label text="Valid From:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>

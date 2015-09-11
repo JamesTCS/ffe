@@ -5,14 +5,13 @@
 	controllerName="pge.ffe.pages.ffe.compatible_unit.technical_object.CreateTechObj">
 	
 	<html:h1 class="center">Create Technical Object: Equipment</html:h1>
-	<l:HorizontalLayout class="float-right">
-		<commons:Button text="Save" press="save" icon="images/save_small.png" class="right10 saveButton"/>
-		<commons:Button text="Back" press="back" icon="images/exit_small.png" class="right10 backButton"/>
-		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="right10 saveExitButton orangeButton"/>
+	<l:HorizontalLayout class="float-right savePane">
+		<commons:Button text="Save" press="save" icon="images/save_small.png" class="saveButton"/>
+		<commons:Button text="Back" press="back" icon="images/exit_small.png" class="backButton"/>
+		<commons:Button text="Save &amp; Exit" press="saveAndExit" class="saveExitButton orangeButton"/>
 	</l:HorizontalLayout>
 	
-	<Panel>
-		<form:Form>
+		<form:Form class="bgBlue">
 			<form:formContainers>
 				<form:FormContainer>
 					<form:formElements>
@@ -105,6 +104,5 @@
 				<form:ResponsiveGridLayout id="L1" columnsL="1"/>
 			</form:layout>
 		</form:Form>
-	</Panel>
 	
 </core:View>

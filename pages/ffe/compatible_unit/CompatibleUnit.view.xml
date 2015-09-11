@@ -7,7 +7,7 @@ xmlns:html="http://www.w3.org/1999/xhtml"
 controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 	
 	<html:h1 class="center" >Compatible Unit</html:h1>
-	<l:VerticalLayout>
+	<l:VerticalLayout class="bgBlue" width="100%">
 		<l:HorizontalLayout>
 			<Label text="Select Area:" class="left10" /> 
 			<DropdownBox class="left10">
@@ -33,7 +33,8 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			</l:HorizontalLayout>
 			
 		</l:VerticalLayout>
-		
+		</l:VerticalLayout>
+		<html:div class="bgBeige">
 		<!-- Old Buttons 
 		<l:HorizontalLayout class="top25">
 			<Button text="Search" icon="/images/search_small.png" />  
@@ -51,7 +52,7 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 			<core:Icon src="/images/edit.png" class="left10" press="toChange" />
 			<core:Icon src="/image-->
 		
-		<t:Table class="top10" >
+		<t:Table>
 			<t:title>
 				<TextView text="Compatible Units"></TextView>
 			</t:title>
@@ -69,6 +70,6 @@ controllerName="pge.ffe.pages.ffe.compatible_unit.CompatibleUnit"  >
 				<t:Column name="test"></t:Column>
 			</t:columns>
 		</t:Table>
-	</l:VerticalLayout>
+		</html:div>
 
 </core:View>

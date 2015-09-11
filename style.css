@@ -43,6 +43,19 @@
 	font-shadow: 0 0px 0 #ffffff !important;
 }*/
 
+.savePane{
+    padding: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    background-color: gray;
+}
+
+.savePane>.sapUiHLayoutChildWrapper{
+	padding: 0px !important;
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+}
+
 .bgBlue{
 	background-color: lightblue !important;
 }

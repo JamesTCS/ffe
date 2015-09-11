@@ -11,9 +11,9 @@
 	
 	<html:h1 class="center">Task List   </html:h1>
 	<l:HorizontalLayout class="float-right savePane">
-		<Button text="Back" icon="/images/exit_small.png" press="back" class="right10" />
-		<Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
-		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
+		<Button text="Save" icon="/images/save_small.png" press="save"/>
+		<Button text="Back" icon="/images/exit_small.png" press="back"/>
+		<Button text="Save &amp; Exit" press="saveAndExit"/>
 	</l:HorizontalLayout>
 	
     	<l:Grid defaultSpan="L12 M12 S12" hSpacing="0.05" vSpacing="1"
@@ -35,7 +35,7 @@
 				<f:formElements>
 			    <f:FormElement >
 			     <f:label>
-					<Label text="Group" class=""></Label>
+					<Label text="Group:" class=""></Label>
 				</f:label>
 				<f:fields >
 					<TextField id="gId" width="150px"  type="Text" value=""
@@ -44,7 +44,7 @@
 			    </f:FormElement>
 			    <f:FormElement>
 			    <f:label>
-					<Label text="Plant" class=""></Label>
+					<Label text="Plant:" class=""></Label>
 				</f:label>
 				<f:fields>
 					<TextField id="plId" width="150px"  type="Text" value=""
@@ -53,7 +53,7 @@
 			    </f:FormElement>
 			   <f:FormElement>
 			   <f:label>
-					<Label text="Task List Description" class=""></Label>
+					<Label text="Task List Description:" class=""></Label>
 				</f:label>
 				<f:fields>
 					<TextField id="tLDId" width="150px"  type="Text" value=""
@@ -62,7 +62,7 @@
 			   </f:FormElement>
 			   <f:FormElement>
 			   <f:label>
-					<Label text="Status" class=""></Label>
+					<Label text="Status:" class=""></Label>
 				</f:label>
 				<f:fields>
 					<TextField id="stId" width="150px"  type="Text" value=""

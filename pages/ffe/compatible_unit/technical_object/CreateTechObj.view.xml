@@ -27,7 +27,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Label>
-								<commons:Label text="Description:" style="text-align:right !important;">
+								<commons:Label text="Description:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
@@ -51,7 +51,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:Label>
-								<commons:Label text="Valid From:" style="text-align:right">
+								<commons:Label text="Valid From:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
@@ -61,7 +61,7 @@
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
 								</commons:DatePicker>
-								<commons:Label text="Valid To:" style="text-align:right">
+								<commons:Label text="Valid To:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>
@@ -85,7 +85,7 @@
 										<l:GridData span="L2 M2 S2"></l:GridData>
 									</commons:layoutData>
 								</commons:TextField>
-								<commons:Label text="Class:">
+								<commons:Label text="Class:" class="rLabel">
 									<commons:layoutData>
 										<l:GridData span="L1 M1 S1"></l:GridData>
 									</commons:layoutData>

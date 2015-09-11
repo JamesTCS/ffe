@@ -88,3 +88,10 @@
 .bottom10{
 	margin-bottom:10px !important;
 }
+.tableTBar{
+	padding: 5px !important;
+    padding-left:10px !important;
+    margin: 5px !important;
+    background-color: gray !important;
+    margin-bottom:10px !important;
+}

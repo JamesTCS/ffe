@@ -19,6 +19,7 @@
     	<l:Grid defaultSpan="L12 M12 S12" hSpacing="0.05" vSpacing="1"
     				containerQuery="true">
     		<l:content>
+    		<html:div class="bgBlue">
     		<f:Form id="taskListForm" minWidth="auto"
 				maxContainerCols="3" editable="true" >
 				<f:title>
@@ -72,11 +73,13 @@
 			   </f:FormContainer>
 			   </f:formContainers>
 			   </f:Form>
+			  </html:div>
 			</l:content>
     	</l:Grid>
 		<!--Operations Table -->
+		<html:div class="bgBeige bottom10">
 			<t:Table id="operationsTable" 
-				growing="true" growingScrollToLoad="true" title="Operation">
+				growing="true" growingScrollToLoad="true" title="Operation" >
 				
 				<t:columns id="operationsTable_columns">
 					<t:Column id="operationsTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"
@@ -126,21 +129,25 @@
 						<TextView id="subItemsListItem_cells_cell_9" text="" />-->
 					</t:rows>
 			</t:Table>
+			</html:div>
 			<!--	<Toolbar>
 				<Button id="addId" text="Add" ></Button>
 				<Button id="rObjViewId" text="Delete" ></Button>
 			</Toolbar>-->
 				<!--Material Table -->
+			<html:div class="bgBlue bottom10">
 			<t:Table id="materialTable" 
 				growing="true" growingScrollToLoad="true" title="Material">
-		       	<t:toolbar>
-		       	<Toolbar>
+
+		       	<t:toolbar class="tableTBar">
+		       	<Toolbar class="tableTBar" >
 			        <rightItems>
 					<Button id="addId" text="Add" ></Button>
 					<Button id="deleteId" text="Delete" ></Button>
 					</rightItems>
 				</Toolbar>
 			   </t:toolbar>
+
 				<t:columns id="materialTable_columns">
 					<t:Column id="materialTable_columns_col1" width="10%" minScreenWidth="Tablet" demandPopin="true"
 						hAlign="Left" vAlign="Top"  >
@@ -173,4 +180,5 @@
 						<TextView id="subItemsListItem_cells_cell_9" text="" />-->
 					</t:rows>
 			</t:Table>
+			</html:div>
 </core:View>

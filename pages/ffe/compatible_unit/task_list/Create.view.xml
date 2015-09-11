@@ -10,7 +10,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	
 	<html:h1 class="center">Task List   </html:h1>
-	<l:HorizontalLayout class="float-right">
+	<l:HorizontalLayout class="float-right savePane">
 		<Button text="Back" icon="/images/exit_small.png" press="back" class="right10" />
 		<Button text="Save" icon="/images/save_small.png" press="save" class="right10"/>
 		<Button text="Save &amp; Exit" press="saveAndExit" class="right10"/>
@@ -173,11 +173,4 @@
 						<TextView id="subItemsListItem_cells_cell_9" text="" />-->
 					</t:rows>
 			</t:Table>
-		<Toolbar>
-		<rightItems>
-			<m:Button id="displayId" type="Emphasized" text="Display" ></m:Button>
-			<m:Button id="saveId" type="Accept" icon="/images/save.png" text="Save" ></m:Button>
-		</rightItems>
-	</Toolbar>
-	
 </core:View>

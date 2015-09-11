@@ -10,7 +10,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	
 	<html:h1 class="center">Change Compatible Unit</html:h1>
-	<l:HorizontalLayout class="float-right">
+	<l:HorizontalLayout class="float-right savePane">
 		<Button text="Back"  press="back" class="right10"/>
 		<Button text="Save" icon="images/save_small.png" press="save" class="right10"/>
 		<Button text="Save &amp; Exit" press="saveAndExit" class="orangeButton"/>

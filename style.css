@@ -27,7 +27,7 @@
 }
 
 #myShell-canvas {  /* make the background of all screens white */
-	background-color: white !important;
+	background-color: #CCC8C8 !important;
 }
 
 /* Global View CSS */

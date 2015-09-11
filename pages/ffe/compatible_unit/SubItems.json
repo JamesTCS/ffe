@@ -1,0 +1,24 @@
+{
+	"subitems" : [ 
+	
+		 {
+		 "ITEM":"0010",
+		 "TYPE":"C",
+		 "CUNUMBER":"CU1000",
+		 "CUDESC":"40' Pole",
+		 "NrC":"1",
+		 "QUANTITY":"1",
+		 "UNIT":"EA"
+		 },
+	 
+		 {
+		 "ITEM":"0020",
+		 "TYPE":"C",
+		 "CUNUMBER":"CU1000",
+		 "CUDESC":"20' Pole",
+		 "NrC":"1",
+		 "QUANTITY":"1",
+		 "UNIT":"EA"
+		 }
+	]
+} 

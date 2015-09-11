@@ -9,8 +9,8 @@
   "pages/ffe/compatible_unit/style.css": "1441991501000",
   "pages/ffe/compatible_unit/CompatibleUnit.controller.js": "1441985819000",
   "pages/ffe/compatible_unit/CompatibleUnit.view.xml": "1441989700000",
-  "pages/ffe/compatible_unit/Change.controller.js": "1441986795000",
-  "pages/ffe/compatible_unit/Change.view.xml": "1441991494000",
+  "pages/ffe/compatible_unit/Change.controller.js": "1441991912000",
+  "pages/ffe/compatible_unit/Change.view.xml": "1441991912000",
   "pages/ffe/compatible_unit/CreateCU.controller.js": "1441745247000",
   "pages/ffe/compatible_unit/CreateCU.view.xml": "1441985819000",
   "pages/ffe/compatible_unit/technical_object/CreateTechObj.controller.js": "1441827335000",
@@ -55,5 +55,6 @@
   "images/view_small.png": "1441745247000",
   "images/struclist_small.png": "1441745247000",
   "images/exit_small.png": "1441827335000",
-  "pages/ffe/compatible_unit/CUData.json": "1441985819000"
+  "pages/ffe/compatible_unit/CUData.json": "1441985819000",
+  "pages/ffe/compatible_unit/SubItems.json": "1441991912000"
 }

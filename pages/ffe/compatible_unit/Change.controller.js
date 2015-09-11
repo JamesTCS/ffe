@@ -2,7 +2,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.Change", {
 	
 	onInit: function() { 
 		jQuery.sap.includeStyleSheet("pages/ffe/compatible_unit/style.css","styleLink");
-		/**
+		
 		//Sub Items Table
 		var subItemsModel = new sap.ui.model.json.JSONModel("/pages/ffe/compatible_unit/SubItems.json");
 		var oTable = this.byId("subItemsTable");
@@ -36,7 +36,7 @@ sap.ui.controller("pge.ffe.pages.ffe.compatible_unit.Change", {
 		oTable.addColumn(new sap.ui.table.Column({
 		    label: new sap.ui.commons.Label({text: "Unit"}), 
 		    template: new sap.ui.commons.TextView({text:"{UNIT}"})
-		}));**/
+		}));
 	},
 	
 	back: function() {

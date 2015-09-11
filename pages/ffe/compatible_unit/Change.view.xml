@@ -52,7 +52,7 @@
 		</html:div>
 		<!-- SubItems Table -->
 		<html:div class="bgBlue">
-			<t:Table>
+			<t:Table id="subItemsTable">
 				<t:extension>
 					<l:HorizontalLayout class="noVPadHLay">
 						<Button class="blueButton tableButton" text="Add Item"/>
@@ -65,17 +65,6 @@
 				<t:title>
 					<Label class="spacing" text="Sub Items"/>
 				</t:title>
-				<t:columns>
-					<t:Column name="#">
-						<t:label><Label text="#"/></t:label>
-					</t:Column>
-					<t:Column name="cu">
-						<t:label><Label text="CU"/></t:label>
-					</t:Column>
-					<t:Column name="Description">
-						<t:label><Label text="CU"/></t:label>
-					</t:Column>
-				</t:columns>
 			</t:Table>
 			<!-- Table Buttons -->
 		</html:div>
